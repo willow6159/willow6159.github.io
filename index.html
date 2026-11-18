@@ -1,0 +1,990 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>女王vk官网-女王vk同人作品与角色档案库</title>
+<meta name="description" content="女王vk官网，整理女王vk在舞台剧与短片中的角色谱系、幕后设定与观众讨论。覆盖角色档案、作品年表、妆造审美与创作者访谈，按日期标注可核对信息来源。">
+<meta name="keywords" content="女王vk官网">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23492b4f'/%3E%3Cpath d='M20 46 L32 16 L44 46 Z' fill='none' stroke='%23e9c46a' stroke-width='4' stroke-linejoin='round'/%3E%3Ccircle cx='32' cy='38' r='4' fill='%23e9c46a'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"女王vk官网","description":"女王vk角色档案、作品年表与观众讨论资料库","inLanguage":"zh-CN"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"女王vk舞台剧《夜巡女王》里的黑羽披肩是道具还是戏服设定？","acceptedAnswer":{"@type":"Answer","text":"是戏服设定。造型组在2026年10月23日的妆造说明里把它列为第二幕固定件，黑羽共九层，重量约1.8公斤，拍摄间隙需要专人托举。"}},
+{"@type":"Question","name":"女王vk短片的角色顺序和舞台剧版本对不上吗？","acceptedAnswer":{"@type":"Answer","text":"对不上。短片《镜厅女王》按拍摄顺序排镜头，舞台剧按剧情时间线排场次，两套顺序在官方日程表中分别标注，混用会得出错误结论。"}},
+{"@type":"Question","name":"女王vk的角色档案为什么有两种编号？","acceptedAnswer":{"@type":"Answer","text":"档案编号按首演日期分配，角色编号按出场顺序分配，2026年10月版本把两套编号并列，观众常把角色编号当成出场次数。"}},
+{"@type":"Question","name":"女王vk官网收录的访谈稿经过删改吗？","acceptedAnswer":{"@type":"Answer","text":"部分经过删改。2026年10月28日的访谈原始录音时长72分钟，公开稿为47分钟，删减段落集中在排期与合约部分。"}},
+{"@type":"Question","name":"女王vk相关衍生展是否需要预约？","acceptedAnswer":{"@type":"Answer","text":"需要。2026年11月5日起的衍生展采取分时段预约，每场限40人，现场仅保留少量候补名额。"}},
+{"@type":"Question","name":"女王vk的妆造手稿能对外引用吗？","acceptedAnswer":{"@type":"Answer","text":"可以引用但需注明手稿编号。手稿共31张，编号VK-M01至VK-M31，其中7张标注了不可商用限制。"}}
+]}
+</script>
+<style>
+:root{
+  --ink:#241a2b;
+  --ink-soft:#4a3b52;
+  --muted:#7b6a83;
+  --brand:#492b4f;
+  --brand-deep:#331b38;
+  --accent:#b03a5b;
+  --gold:#e9c46a;
+  --gold-soft:#f4e3b8;
+  --bg:#faf6f9;
+  --panel:#ffffff;
+  --line:#e6dbe6;
+  --line-strong:#d3c2d6;
+  --radius:14px;
+  --radius-sm:8px;
+  --shadow:0 6px 24px rgba(73,43,79,.08);
+  --shadow-sm:0 2px 10px rgba(73,43,79,.06);
+  --space:18px;
+  --maxw:1180px;
+  --sticky-h:96px;
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:var(--sticky-h)}
+body{
+  margin:0;font-family:var(--font);color:var(--ink);
+  background:var(--bg);line-height:1.75;font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{line-height:1.35;margin:0;color:var(--brand-deep)}
+p{margin:0 0 12px}
+ul,ol{margin:0 0 12px;padding-left:1.2em}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+.sticky-wrap{position:sticky;top:0;z-index:50}
+
+/* 公告条 */
+.announce{
+  background:var(--brand-deep);color:#f6eaf3;font-size:13.5px;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.announce .wrap{display:flex;align-items:center;gap:14px;min-height:40px;padding-top:6px;padding-bottom:6px}
+.announce .badge{
+  background:var(--gold);color:#3a2230;font-weight:700;border-radius:4px;
+  padding:1px 7px;font-size:12px;letter-spacing:.5px;white-space:nowrap;
+}
+.announce b{color:var(--gold)}
+.announce .a-links{margin-left:auto;display:flex;gap:14px;white-space:nowrap}
+.announce .a-links a{color:#f0d9e8;font-size:13px}
+.announce .a-links a:hover{color:var(--gold)}
+
+/* 页头 */
+.head{background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.head .wrap{display:flex;align-items:center;gap:22px;min-height:64px}
+.brand{display:flex;align-items:center;gap:10px;color:var(--brand-deep);font-weight:800;font-size:19px;letter-spacing:.5px;white-space:nowrap}
+.brand svg{width:34px;height:34px;flex:none}
+.nav{display:flex;gap:4px;flex-wrap:wrap;flex:1}
+.nav a{
+  color:var(--ink-soft);font-size:14.5px;padding:7px 11px;border-radius:8px;
+  position:relative;white-space:nowrap;
+}
+.nav a:hover{background:#f3eaf3;text-decoration:none;color:var(--brand)}
+.nav a[aria-current="true"]{color:var(--accent);font-weight:700;background:#fbebf0}
+.head-actions{display:flex;align-items:center;gap:10px;margin-left:auto}
+.search{
+  display:flex;align-items:center;border:1px solid var(--line-strong);border-radius:9px;
+  background:#fff;overflow:hidden;
+}
+.search input{border:0;outline:0;padding:7px 10px;font-size:14px;width:150px;font-family:inherit;color:var(--ink);background:transparent}
+.search button{border:0;background:var(--brand);color:#fff;padding:8px 12px;font-size:13.5px;cursor:pointer;font-family:inherit}
+.search button:hover{background:var(--brand-deep)}
+.menu-btn{display:none;border:1px solid var(--line-strong);background:#fff;border-radius:9px;padding:8px 11px;font-size:14px;color:var(--brand);cursor:pointer;font-family:inherit}
+.menu-btn:focus-visible,.nav a:focus-visible,.search input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* 首屏 */
+.hero{position:relative;overflow:hidden;background:linear-gradient(150deg,#311a3b 0%,#492b4f 48%,#5a3159 100%);color:#fff}
+.hero::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(circle at 82% 22%,rgba(233,196,106,.20),transparent 42%),
+    radial-gradient(circle at 12% 78%,rgba(176,58,91,.28),transparent 46%);
+}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:36px;padding-top:52px;padding-bottom:56px;align-items:center}
+.hero .kicker{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:2px;
+  text-transform:uppercase;color:var(--gold);border:1px solid rgba(233,196,106,.45);
+  padding:3px 12px;border-radius:99px;margin-bottom:18px;
+}
+.hero h1{font-size:clamp(30px,4.4vw,46px);color:#fff;letter-spacing:1px;margin-bottom:14px}
+.hero .lead{color:#efdcea;font-size:16px;max-width:44ch;margin-bottom:22px}
+.hero-btns{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:26px}
+.btn{display:inline-block;padding:10px 20px;border-radius:10px;font-size:15px;font-weight:600;transition:transform .18s ease}
+.btn:hover{text-decoration:none;transform:translateY(-2px)}
+.btn-primary{background:var(--gold);color:#38202f}
+.btn-ghost{border:1px solid rgba(255,255,255,.5);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+.hero-stats{display:flex;flex-wrap:wrap;gap:26px;border-top:1px solid rgba(255,255,255,.16);padding-top:18px}
+.hero-stats div{font-size:13px;color:#d9c2d6}
+.hero-stats b{display:block;font-size:23px;color:var(--gold);line-height:1.2;font-weight:800}
+.hero-art{position:relative;min-height:300px;display:flex;align-items:center;justify-content:center}
+.hero-art svg{width:100%;max-width:420px;height:auto;filter:drop-shadow(0 12px 30px rgba(0,0,0,.35))}
+.hero-art .tagline{
+  position:absolute;bottom:2px;left:50%;transform:translateX(-50%);
+  font-size:12px;letter-spacing:2px;color:#dfc9dd;white-space:nowrap;
+}
+
+/* 布局 */
+.layout{display:grid;grid-template-columns:1fr 290px;gap:30px;padding:42px 0 20px}
+.main-col{min-width:0}
+.side-col{min-width:0}
+section.block{margin-bottom:44px;scroll-margin-top:var(--sticky-h)}
+.block-head{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;border-bottom:2px solid var(--line);padding-bottom:10px}
+.block-head h2{font-size:22px;letter-spacing:.5px}
+.block-head .en{font-size:12px;color:var(--muted);letter-spacing:1.5px;text-transform:uppercase}
+.block-head .more{margin-left:auto;font-size:13.5px;color:var(--accent);white-space:nowrap}
+.sec-note{color:var(--ink-soft);font-size:15px;margin-bottom:16px;max-width:70ch}
+
+/* 概览 */
+.overview{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.ov-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);padding:14px 14px 12px;box-shadow:var(--shadow-sm)}
+.ov-card b{display:block;font-size:20px;color:var(--brand);line-height:1.2}
+.ov-card span{font-size:12.5px;color:var(--muted);display:block;margin-top:5px}
+
+/* 精选卡片网格 */
+.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.fcard{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);display:flex;flex-direction:column;transition:transform .2s ease,box-shadow .2s ease}
+.fcard:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.fcard img{width:100%;height:132px;object-fit:cover}
+.fcard .fc-body{padding:13px 15px 15px;display:flex;flex-direction:column;flex:1}
+.fcard .fc-tag{font-size:11.5px;color:var(--accent);letter-spacing:1px;margin-bottom:5px}
+.fcard h3{font-size:16px;margin-bottom:7px}
+.fcard p{font-size:13.5px;color:var(--ink-soft);margin-bottom:11px;flex:1}
+.fcard .meta{font-size:12px;color:var(--muted);border-top:1px dashed var(--line);padding-top:8px}
+
+/* 最新更新列表 */
+.updates{list-style:none;padding:0;margin:0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--panel)}
+.updates li{display:flex;gap:16px;padding:14px 16px;border-bottom:1px solid var(--line);align-items:flex-start}
+.updates li:last-child{border-bottom:0}
+.updates .date{flex:none;width:74px;font-size:12.5px;color:var(--accent);font-weight:700;padding-top:2px}
+.updates .u-body{min-width:0}
+.updates h3{font-size:15.5px;margin-bottom:3px}
+.updates p{font-size:13.5px;color:var(--ink-soft);margin:0}
+.updates .u-src{font-size:12px;color:var(--muted);margin-top:4px;display:block}
+
+/* 分类入口 */
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.cat{display:block;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);padding:14px;text-align:center;color:var(--brand-deep);font-size:14.5px;font-weight:600;transition:border-color .18s ease,transform .18s ease}
+.cat small{display:block;font-weight:400;font-size:12px;color:var(--muted);margin-top:3px}
+.cat:hover{text-decoration:none;border-color:var(--accent);transform:translateY(-2px)}
+
+/* 深度解析 */
+.deep{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:26px 26px 20px;box-shadow:var(--shadow-sm)}
+.deep h3{font-size:18px;margin:24px 0 9px;padding-left:11px;border-left:4px solid var(--accent)}
+.deep h3:first-of-type{margin-top:6px}
+.deep p{font-size:15px;color:var(--ink-soft)}
+.deep .quote{border-left:3px solid var(--gold);background:#fdf8ec;padding:12px 16px;margin:16px 0;border-radius:0 var(--radius-sm) var(--radius-sm) 0;font-size:14.5px;color:#5c4326}
+.deep .quote cite{display:block;font-style:normal;font-size:12.5px;color:#8a7355;margin-top:6px}
+.checklist{list-style:none;padding:0;margin:14px 0}
+.checklist li{position:relative;padding-left:26px;margin-bottom:9px;font-size:14.5px;color:var(--ink-soft)}
+.checklist li::before{content:"◆";position:absolute;left:0;color:var(--accent);font-size:11px;top:4px}
+.table-wrap{overflow-x:auto;margin:16px 0;border:1px solid var(--line);border-radius:var(--radius-sm)}
+table{border-collapse:collapse;width:100%;font-size:14px;background:#fff;min-width:520px}
+th,td{padding:10px 13px;text-align:left;border-bottom:1px solid var(--line)}
+th{background:#f6eef5;color:var(--brand-deep);font-size:13.5px;white-space:nowrap}
+td{color:var(--ink-soft)}
+tr:last-child td{border-bottom:0}
+.factbox{background:#f4f0f6;border:1px dashed var(--line-strong);border-radius:var(--radius-sm);padding:12px 16px;font-size:13.5px;color:#55425c;margin:14px 0}
+
+/* 体验指南 编号步骤 */
+.steps{list-style:none;counter-reset:step;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.steps li{counter-increment:step;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);padding:16px 16px 14px 58px;position:relative;font-size:14px;color:var(--ink-soft)}
+.steps li::before{content:counter(step,decimal-leading-zero);position:absolute;left:15px;top:14px;font-size:19px;font-weight:800;color:var(--accent);letter-spacing:-1px}
+.steps li b{display:block;color:var(--brand-deep);font-size:15px;margin-bottom:4px}
+
+/* 对照面板 */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--panel)}
+.compare > div{padding:18px 18px 14px}
+.compare > div:first-child{border-right:1px solid var(--line);background:#fbf7fb}
+.compare h3{font-size:16px;margin-bottom:9px}
+.compare ul{margin-bottom:0;font-size:14px;color:var(--ink-soft)}
+.compare li{margin-bottom:6px}
+
+/* 时间线 */
+.timeline{list-style:none;padding:0;margin:0;border-left:2px solid var(--line-strong);margin-left:8px}
+.timeline li{position:relative;padding:0 0 20px 24px}
+.timeline li::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--brand);border:2px solid #fff;box-shadow:0 0 0 2px var(--line-strong)}
+.timeline time{font-size:12.5px;color:var(--accent);font-weight:700;letter-spacing:.5px}
+.timeline b{display:block;font-size:15px;color:var(--brand-deep);margin:2px 0 3px}
+.timeline p{font-size:13.5px;color:var(--ink-soft);margin:0}
+
+/* FAQ */
+.faq details{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);margin-bottom:10px;overflow:hidden}
+.faq summary{cursor:pointer;padding:14px 17px;font-weight:600;font-size:15px;color:var(--brand-deep);list-style:none;position:relative;padding-right:44px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:16px;top:12px;font-size:19px;color:var(--accent);font-weight:400;transition:transform .2s ease}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq summary:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.faq .ans{padding:0 17px 15px;font-size:14px;color:var(--ink-soft);border-top:1px dashed var(--line);margin-top:0;padding-top:12px}
+
+/* 评论 */
+.comments{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.cmt{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);padding:15px;font-size:13.8px;color:var(--ink-soft);display:flex;flex-direction:column}
+.cmt .who{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.cmt .av{width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,var(--brand),var(--accent));color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;flex:none;font-weight:700}
+.cmt .name{font-size:13px;font-weight:700;color:var(--brand-deep)}
+.cmt .when{font-size:11.5px;color:var(--muted);margin-left:auto}
+.cmt .txt{flex:1}
+.cmt .ref{font-size:11.5px;color:var(--accent);margin-top:8px;border-top:1px dashed var(--line);padding-top:6px}
+
+/* 资讯 */
+.news-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--panel)}
+.news-list li{padding:13px 16px;border-bottom:1px solid var(--line)}
+.news-list li:nth-child(odd){border-right:1px solid var(--line)}
+.news-list li:nth-last-child(-n+2){border-bottom:0}
+.news-list b{display:block;font-size:14.5px;color:var(--brand-deep);margin-bottom:2px}
+.news-list span{font-size:12.8px;color:var(--ink-soft)}
+.news-list time{font-size:12px;color:var(--accent);font-weight:600;margin-right:6px}
+
+/* 标签索引 */
+.tags{display:flex;flex-wrap:wrap;gap:9px}
+.tags a{background:#fff;border:1px solid var(--line-strong);border-radius:99px;padding:5px 13px;font-size:13.5px;color:var(--ink-soft)}
+.tags a:hover{background:var(--brand);color:#fff;border-color:var(--brand);text-decoration:none}
+
+/* 侧栏 */
+.side-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:16px;margin-bottom:18px;box-shadow:var(--shadow-sm)}
+.side-card h2{font-size:15.5px;margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid var(--line)}
+.side-card h2 span{font-size:11.5px;color:var(--muted);font-weight:400;letter-spacing:1px;margin-left:6px}
+.side-nav{list-style:none;padding:0;margin:0;font-size:14px}
+.side-nav li a{display:block;padding:6px 9px;border-radius:6px;color:var(--ink-soft);border-left:3px solid transparent}
+.side-nav li a:hover{background:#f6eef5;text-decoration:none}
+.side-nav li a.active{color:var(--accent);background:#fbebf0;border-left-color:var(--accent);font-weight:600}
+.rank{list-style:none;padding:0;margin:0;font-size:13.5px}
+.rank li{display:flex;gap:9px;padding:8px 0;border-bottom:1px dashed var(--line);color:var(--ink-soft)}
+.rank li:last-child{border-bottom:0}
+.rank b{color:var(--accent);font-size:13px;flex:none;width:20px}
+.side-note{font-size:12.5px;color:var(--muted);line-height:1.65;margin-top:6px}
+
+/* 搜索状态 */
+.search-status{display:none;background:#fff3f7;border:1px solid #f0c8d7;color:#8c2c4c;border-radius:var(--radius-sm);padding:10px 14px;font-size:14px;margin-bottom:18px}
+.search-status.show{display:block}
+
+/* 页尾 */
+.foot{background:var(--brand-deep);color:#e4d3e3;margin-top:20px;font-size:13.5px}
+.foot .wrap{padding-top:38px;padding-bottom:26px}
+.foot-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:26px;padding-bottom:26px;border-bottom:1px solid rgba(255,255,255,.12)}
+.foot-brand{display:flex;align-items:center;gap:10px;color:#fff;font-weight:800;font-size:17px;margin-bottom:10px}
+.foot-brand svg{width:30px;height:30px}
+.foot .fl p{color:#c3aec1;line-height:1.7;margin-bottom:8px}
+.foot h3{font-size:14px;color:var(--gold);margin-bottom:10px;letter-spacing:.5px}
+.foot ul{list-style:none;padding:0;margin:0}
+.foot ul li{margin-bottom:6px}
+.foot ul a{color:#d3c0d1;font-size:13px}
+.foot ul a:hover{color:#fff}
+.foot-bottom{padding-top:18px;display:flex;flex-wrap:wrap;gap:8px 20px;color:#a98ea6;font-size:12.5px;align-items:center}
+.foot-bottom .demo{color:#c9b2c6}
+
+/* 回到顶部 */
+#toTop{position:fixed;right:18px;bottom:22px;width:44px;height:44px;border-radius:50%;background:var(--accent);color:#fff;border:0;font-size:18px;cursor:pointer;box-shadow:0 6px 18px rgba(176,58,91,.4);opacity:0;visibility:hidden;transition:opacity .25s ease,visibility .25s ease,transform .18s ease;z-index:60}
+#toTop.show{opacity:1;visibility:visible}
+#toTop:hover{transform:translateY(-3px)}
+#toTop:focus-visible{outline:2px solid #fff;outline-offset:2px}
+
+@media (max-width:980px){
+  .layout{grid-template-columns:1fr;gap:0}
+  .side-col{order:2}
+  .feature-grid{grid-template-columns:repeat(2,1fr)}
+  .comments{grid-template-columns:repeat(2,1fr)}
+  .cats{grid-template-columns:repeat(3,1fr)}
+  .hero .wrap{grid-template-columns:1fr;gap:18px;padding-top:38px;padding-bottom:42px}
+  .hero-art{min-height:220px;order:-1}
+  .foot-top{grid-template-columns:1fr 1fr}
+  .nav{display:none}
+  .nav.open{display:flex;position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line);padding:10px 16px;gap:2px;flex-direction:column;box-shadow:var(--shadow)}
+  .nav.open a{padding:10px 12px}
+  .menu-btn{display:inline-block}
+  .head .wrap{position:relative;flex-wrap:wrap}
+  .search input{width:120px}
+  .compare{grid-template-columns:1fr}
+  .compare > div:first-child{border-right:0;border-bottom:1px solid var(--line)}
+}
+@media (max-width:640px){
+  :root{--sticky-h:88px}
+  body{font-size:15.5px}
+  .hero h1{font-size:28px}
+  .feature-grid,.comments,.steps,.overview{grid-template-columns:1fr}
+  .overview{grid-template-columns:1fr 1fr}
+  .cats{grid-template-columns:1fr 1fr}
+  .news-list{grid-template-columns:1fr}
+  .news-list li:nth-child(odd){border-right:0}
+  .news-list li:nth-last-child(-n+2){border-bottom:1px solid var(--line)}
+  .news-list li:last-child{border-bottom:0}
+  .foot-top{grid-template-columns:1fr}
+  .announce .a-links{display:none}
+  .announce .wrap{min-height:36px}
+  .deep{padding:18px 16px}
+  .updates li{flex-direction:column;gap:2px}
+  .updates .date{width:auto}
+  .search input{width:96px}
+  .head-actions{flex:1;justify-content:flex-end}
+  #toTop{width:40px;height:40px;right:12px;bottom:14px}
+  .block-head{flex-wrap:wrap}
+  .block-head .more{margin-left:0;width:100%}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none !important;animation:none !important;scroll-behavior:auto !important}
+  .fcard:hover,.btn:hover,.cat:hover,#toTop:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-wrap">
+  <div class="announce">
+    <div class="wrap">
+      <span class="badge">更新</span>
+      <span><b>女王vk官网</b> 档案库 · 2026年11月7日补录《夜巡女王》第二幕妆造手稿7张，编号 VK-M25 至 VK-M31。</span>
+      <span class="a-links">
+        <a href="/#updates">最新更新</a>
+        <a href="/#faq">常见问题</a>
+      </span>
+    </div>
+  </div>
+  <header class="head">
+    <div class="wrap">
+      <a class="brand" href="/#top" aria-label="女王vk官网首页">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#492b4f"></rect>
+          <path d="M20 46 L32 16 L44 46 Z" fill="none" stroke="#e9c46a" stroke-width="4" stroke-linejoin="round"></path>
+          <circle cx="32" cy="38" r="4" fill="#e9c46a"></circle>
+        </svg>
+        女王vk官网
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">菜单</button>
+      <nav class="nav" id="mainNav" aria-label="主题导航">
+        <a href="/#overview" aria-current="true">领域概览</a>
+        <a href="/#featured">精选推荐</a>
+        <a href="/#updates">最新更新</a>
+        <a href="/#channels">分类入口</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#timeline">作品年表</a>
+        <a href="/#faq">常见问题</a>
+      </nav>
+      <div class="head-actions">
+        <div class="search">
+          <input type="search" id="searchInput" placeholder="搜角色、作品、妆造" aria-label="站内搜索">
+          <button type="button" id="searchBtn">查找</button>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <span class="kicker">角色档案 · 舞台与短片</span>
+        <h1>女王vk官网</h1>
+        <p class="lead">把女王vk在舞台剧、短片与衍生展里的角色一条条拆开：谁在第几幕换装、哪段台词改过、妆造手稿编号怎么对，都按可查的日期与文件名放好。</p>
+        <div class="hero-btns">
+          <a class="btn btn-primary" href="/#deep">读深度解析</a>
+          <a class="btn btn-ghost" href="/#channels">按类别找</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>31</b>份妆造手稿</div>
+          <div><b>12</b>个角色档案</div>
+          <div><b>9</b>场舞台演出</div>
+          <div><b>4</b>版访谈稿</div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <svg viewBox="0 0 420 340" role="img" aria-label="抽象女王面具与羽饰构成的图形">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#e9c46a"/>
+              <stop offset="1" stop-color="#b03a5b"/>
+            </linearGradient>
+            <linearGradient id="g2" x1="0" y1="1" x2="1" y2="0">
+              <stop offset="0" stop-color="#f4e3b8" stop-opacity=".85"/>
+              <stop offset="1" stop-color="#e9c46a" stop-opacity=".1"/>
+            </linearGradient>
+          </defs>
+          <ellipse cx="210" cy="300" rx="150" ry="18" fill="#1d0f24" opacity=".55"/>
+          <path d="M210 46 C258 46 296 96 296 160 C296 226 258 272 210 272 C162 272 124 226 124 160 C124 96 162 46 210 46 Z" fill="none" stroke="url(#g1)" stroke-width="3"/>
+          <path d="M210 76 C242 76 268 112 268 160 C268 208 242 244 210 244 C178 244 152 208 152 160 C152 112 178 76 210 76 Z" fill="#2a1531" stroke="#e9c46a" stroke-width="2" opacity=".95"/>
+          <path d="M172 148 Q188 132 204 148" fill="none" stroke="#e9c46a" stroke-width="4" stroke-linecap="round"/>
+          <path d="M216 148 Q232 132 248 148" fill="none" stroke="#e9c46a" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="188" cy="156" r="5" fill="#f4e3b8"/>
+          <circle cx="232" cy="156" r="5" fill="#f4e3b8"/>
+          <path d="M210 172 L200 196 L220 196 Z" fill="#b03a5b"/>
+          <path d="M188 214 Q210 230 232 214" fill="none" stroke="#e9c46a" stroke-width="3" stroke-linecap="round"/>
+          <g stroke="url(#g2)" stroke-width="2.5" fill="none">
+            <path d="M124 100 Q70 92 44 130"/>
+            <path d="M126 128 Q66 124 34 168"/>
+            <path d="M132 156 Q72 160 46 206"/>
+            <path d="M296 100 Q350 92 376 130"/>
+            <path d="M294 128 Q354 124 386 168"/>
+            <path d="M288 156 Q348 160 374 206"/>
+          </g>
+          <circle cx="210" cy="40" r="7" fill="#e9c46a"/>
+          <path d="M210 20 L214 34 L210 30 L206 34 Z" fill="#f4e3b8"/>
+        </svg>
+        <span class="tagline">面具 · 羽饰 · 编号手稿</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="search-status" id="searchStatus" role="status" aria-live="polite"></div>
+    <div class="layout">
+      <div class="main-col">
+
+        <section class="block" id="overview">
+          <div class="block-head">
+            <h2>领域概览：角色、场次与手稿</h2>
+            <span class="en">Overview</span>
+          </div>
+          <p class="sec-note">女王vk的作品线索分三处：舞台剧场次表、短片分镜本、衍生展的实物陈列。三者各有一套编号，交叉引用时需要先确认编号归属。</p>
+          <div class="overview">
+            <div class="ov-card"><b>《夜巡女王》</b><span>舞台剧 · 2026年10月17日首演</span></div>
+            <div class="ov-card"><b>《镜厅女王》</b><span>短片 · 2026年10月26日上线</span></div>
+            <div class="ov-card"><b>《黑羽三段式》</b><span>衍生展 · 2026年11月5日开展</span></div>
+            <div class="ov-card"><b>VK-M 系列</b><span>妆造手稿 · 共31张</span></div>
+          </div>
+          <p style="margin-top:16px;color:var(--ink-soft);font-size:14.5px;max-width:78ch">场次表由制作组在2026年10月19日发布，短片分镜本在10月25日随片尾字幕一起公开，衍生展的展签文字则来自11月3日的布展清单。三份文件都标注了版本号，遇到日期冲突以展签上的编号为准。</p>
+        </section>
+
+        <section class="block" id="featured">
+          <div class="block-head">
+            <h2>精选内容推荐</h2>
+            <span class="en">Featured</span>
+            <a class="more" href="/#channels">更多分类 →</a>
+          </div>
+          <div class="feature-grid">
+            <article class="fcard">
+              <img src="https://picsum.photos/seed/vk-mask-0417/480/300" width="480" height="300" loading="lazy" alt="舞台面具道具陈列，黑色羽饰与金线" style="object-fit:cover">
+              <div class="fc-body">
+                <span class="fc-tag">角色档案</span>
+                <h3>夜巡女王黑羽披肩的九层结构</h3>
+                <p>第二幕固定件，九层黑羽逐层递减，最外层长度约62厘米。造型组说明列入 VK-M18。</p>
+                <span class="meta">2026年10月23日 · 妆造说明</span>
+              </div>
+            </article>
+            <article class="fcard">
+              <img src="https://picsum.photos/seed/vk-mirror-0912/480/300" width="480" height="300" loading="lazy" alt="镜面走廊中的短片分镜画面" style="object-fit:cover">
+              <div class="fc-body">
+                <span class="fc-tag">短片分镜</span>
+                <h3>《镜厅女王》第7号镜头的三版走位</h3>
+                <p>分镜本标注 A、B、C 三版，最终采用 C 版，理由是镜面反射能同时容纳两名替身。</p>
+                <span class="meta">2026年10月26日 · 分镜本</span>
+              </div>
+            </article>
+            <article class="fcard">
+              <img src="https://picsum.photos/seed/vk-exhibit-3371/480/300" width="480" height="300" loading="lazy" alt="展柜内的妆造手稿与色卡" style="object-fit:cover">
+              <div class="fc-body">
+                <span class="fc-tag">衍生展</span>
+                <h3>衍生展展签编号与手稿编号的对应表</h3>
+                <p>展签 01 至 12 与 VK-M01 至 VK-M31 并非一一对应，有4张手稿挂在同一展柜。</p>
+                <span class="meta">2026年11月5日 · 布展清单</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="block" id="updates">
+          <div class="block-head">
+            <h2>最新更新</h2>
+            <span class="en">Updates</span>
+          </div>
+          <ul class="updates">
+            <li>
+              <span class="date">11月7日</span>
+              <div class="u-body">
+                <h3>补录妆造手稿 VK-M25 至 VK-M31</h3>
+                <p>7张手稿含3张色卡、4张披肩局部放大图，其中 VK-M29 标注“不可商用”。</p>
+                <span class="u-src">来源：妆造组档案目录 · 版本 2026.11.07</span>
+              </div>
+            </li>
+            <li>
+              <span class="date">11月6日</span>
+              <div class="u-body">
+                <h3>访谈原始录音时长更正</h3>
+                <p>10月28日访谈公开稿删减段落说明更新，原始录音72分钟，公开稿47分钟。</p>
+                <span class="u-src">来源：访谈稿版本说明第2页</span>
+              </div>
+            </li>
+            <li>
+              <span class="date">11月5日</span>
+              <div class="u-body">
+                <h3>衍生展分时段预约开放</h3>
+                <p>每场限40人，现场保留少量候补名额，展期为11月5日至11月29日。</p>
+                <span class="u-src">来源：展务公告 2026-1105-03</span>
+              </div>
+            </li>
+            <li>
+              <span class="date">11月3日</span>
+              <div class="u-body">
+                <h3>《夜巡女王》第二幕台词第14句修订</h3>
+                <p>原稿“灯亮之前”改为“灯亮之后”，制作组在排练记录里标注了改动理由。</p>
+                <span class="u-src">来源：排练记录 VK-R-20261103</span>
+              </div>
+            </li>
+            <li>
+              <span class="date">10月31日</span>
+              <div class="u-body">
+                <h3>短片《镜厅女王》片尾字幕补挂造型助理名单</h3>
+                <p>补挂4人，与分镜本附录的名单一致，此前线上版本遗漏第3位。</p>
+                <span class="u-src">来源：片尾字幕修订记录</span>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="block" id="channels">
+          <div class="block-head">
+            <h2>分类入口</h2>
+            <span class="en">Channels</span>
+          </div>
+          <div class="cats">
+            <a class="cat" href="/#deep">角色档案<small>12个角色 · 编号对照</small></a>
+            <a class="cat" href="/#deep">舞台场次表<small>9场演出 · 逐幕拆解</small></a>
+            <a class="cat" href="/#guide">妆造手稿<small>31张 · 色卡与披肩</small></a>
+            <a class="cat" href="/#timeline">作品年表<small>10月至11月 · 按日排列</small></a>
+            <a class="cat" href="/#faq">访谈稿<small>4版 · 删减段落标注</small></a>
+            <a class="cat" href="/#guide">衍生展展签<small>12个展签 · 分时预约</small></a>
+            <a class="cat" href="/#comments">观众讨论<small>评论 · 具体条目指向</small></a>
+            <a class="cat" href="/#news">幕后动态<small>排练记录 · 字幕修订</small></a>
+            <a class="cat" href="/#rank">热度榜<small>按检索次数排序</small></a>
+            <a class="cat" href="/#tags">标签索引<small>关键词直达</small></a>
+            <a class="cat" href="/#compare">版本对照<small>舞台版与短片版</small></a>
+            <a class="cat" href="/#faq">常见问题<small>6问 · 编号与预约</small></a>
+          </div>
+        </section>
+
+        <section class="block" id="deep">
+          <div class="block-head">
+            <h2>深度解析：《夜巡女王》与《镜厅女王》的排序差异</h2>
+            <span class="en">Deep Read</span>
+          </div>
+          <div class="deep">
+            <p>把两个作品放在一起看，最容易出错的地方是“顺序”。舞台剧按剧情时间线排场次，短片按拍摄顺序排镜头，两套顺序在官方日程表中分别标注，混用会得出“角色提前登场”的错误结论。</p>
+
+            <h3>问题出在编号系统而不是叙事本身</h3>
+            <p>档案编号按首演日期分配，角色编号按出场顺序分配。2026年10月版本把两套编号并列，观众常把角色编号当成出场次数。举例：角色编号 VK-C03 的黑羽侍从在舞台剧里第二幕才出现，但在短片里是第7号镜头，若按角色编号排序，会误以为它排在第3位登场。</p>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr><th>条目</th><th>档案编号</th><th>角色编号</th><th>实际首次出现</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>黑羽侍从</td><td>VK-A03</td><td>VK-C03</td><td>舞台剧第二幕 / 短片第7镜</td></tr>
+                  <tr><td>镜厅引路人</td><td>VK-A07</td><td>VK-C01</td><td>短片第1镜 / 舞台剧第三幕</td></tr>
+                  <tr><td>夜巡女王本体</td><td>VK-A01</td><td>VK-C05</td><td>舞台剧第一幕 / 短片第2镜</td></tr>
+                  <tr><td>提灯女官</td><td>VK-A10</td><td>VK-C08</td><td>舞台剧第三幕 / 短片第11镜</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>这张表能直接反驳一种常见说法：短片里“镜厅引路人先出现”，所以它才是第一主角。角色编号 VK-C01 只是按出场顺序排，与戏份权重无关；舞台剧第三幕才给它台词，时长不足4分钟。</p>
+
+            <h3>10月23日的妆造说明与11月3日的展签存在时间落差</h3>
+            <p>妆造说明在10月23日把黑羽披肩定为“第二幕固定件”，展签在11月3日却把它写成“可拆卸件，第三幕可返场”。两处并不矛盾，但时间点不同：10月23日对应的是首演版本，11月3日对应的是衍生展陈列版本，后者为方便展柜布置做了拆分。</p>
+            <div class="factbox">
+              <b>可核对结构（拆成三步）：</b><br>
+              ① 先查日期：10月23日 vs 11月3日；<br>
+              ② 再查文件类型：妆造说明是排演文件，展签是陈列文件；<br>
+              ③ 最后看编号：VK-M18 在排演文件中标“固定”，在展签中标“可拆卸”，以编号所在文件为准。
+            </div>
+            <p>按这个顺序核对，就能判断“披肩第三幕返场”是陈列版本的改动，而不是舞台演出中的真实设置。</p>
+
+            <h3>访谈删减段落影响了对“黑羽”的解读</h3>
+            <p>2026年10月28日的访谈原始录音72分钟，公开稿47分钟，删减段落集中在排期与合约部分。被删的段落里有一句谈及黑羽的含义，公开稿只保留了前半句。若只读公开稿，容易把黑羽当成纯粹的装饰；结合原始录音的上下文，黑羽与“夜巡”的时间设定有关，但这一点在公开稿中没有完整呈现。</p>
+            <blockquote class="quote">
+              “黑羽是给第二幕留的，不是给角色留的。”
+              <cite>—— 妆造组说明，2026年10月23日，公开稿第3页</cite>
+            </blockquote>
+            <p>这句原文措辞值得注意：“给第二幕留的”指向场次安排，而非角色性格。把它读成角色设定，就会与角色档案的编号系统产生第二次冲突。</p>
+
+            <h3>一个可被反驳的判断</h3>
+            <p>判断：短片的镜头顺序比舞台剧场次表更适合作为理解角色关系的入口。理由有二：短片第1镜到第11镜之间，两名替身的镜面反射同时出现，能一次看到多个角色的空间关系；舞台剧第二幕的披肩重量约1.8公斤，拍摄间隙需要专人托举，单人视角容易被道具遮挡。若有人以“舞台剧才是原版”反驳，需要先说明场次表的编号规则，否则两种说法都只是在争排序，而非争内容。</p>
+            <ul class="checklist">
+              <li>核对项一：短片第7镜是否真的同时出现两名替身，看10月26日分镜本附录。</li>
+              <li>核对项二：舞台剧披肩重量是否确为1.8公斤，看10月23日妆造说明。</li>
+              <li>核对项三：访谈原始录音中“给第二幕留的”前后各一句，是否改变了句意。</li>
+            </ul>
+            <p>2026年11月3日的排练记录还显示，第二幕台词第14句从“灯亮之前”改为“灯亮之后”。一字之差，把黑羽披肩的出场时机往后推了半拍，也让短片第7镜的空间关系更接近舞台版本。这个改动到11月7日尚未在公开稿中同步，属于可继续追踪的更新点。</p>
+          </div>
+        </section>
+
+        <section class="block" id="guide">
+          <div class="block-head">
+            <h2>体验指南：从预约到看展的四步</h2>
+            <span class="en">Guide</span>
+          </div>
+          <ol class="steps">
+            <li><b>先确认展期与时段</b>衍生展自2026年11月5日起开放，每场40人，分时段预约，现场候补名额有限。</li>
+            <li><b>带好手稿编号清单</b>展柜按展签 01 至 12 排列，手稿 VK-M01 至 VK-M31 中有4张同柜陈列，先看清单再看实物。</li>
+            <li><b>对照妆造说明读展签</b>展签把披肩标为可拆卸件，与10月23日排演文件的“固定件”不同，读到差异属正常。</li>
+            <li><b>留出访谈稿比对时间</b>公开稿47分钟，原始录音72分钟，删减段落在排期与合约部分，现场不提供录音回放。</li>
+          </ol>
+        </section>
+
+        <section class="block" id="compare">
+          <div class="block-head">
+            <h2>版本对照：舞台版与短片版</h2>
+            <span class="en">Compare</span>
+          </div>
+          <div class="compare">
+            <div>
+              <h3>舞台剧《夜巡女王》</h3>
+              <ul>
+                <li>按剧情时间线排场次，共三幕</li>
+                <li>黑羽披肩为第二幕固定件，重量约1.8公斤</li>
+                <li>台词第14句改自“灯亮之前”</li>
+                <li>首演日 2026年10月17日</li>
+              </ul>
+            </div>
+            <div>
+              <h3>短片《镜厅女王》</h3>
+              <ul>
+                <li>按拍摄顺序排镜头，共11个主镜头</li>
+                <li>披肩改为可拆卸件，方便镜面反射走位</li>
+                <li>第7镜采用 C 版走位，容纳两名替身</li>
+                <li>上线日 2026年10月26日</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="block" id="timeline">
+          <div class="block-head">
+            <h2>作品年表</h2>
+            <span class="en">Timeline</span>
+          </div>
+          <ol class="timeline">
+            <li>
+              <time>2026年10月17日</time>
+              <b>《夜巡女王》首演</b>
+              <p>三幕结构，第二幕黑羽披肩首次登场。</p>
+            </li>
+            <li>
+              <time>2026年10月19日</time>
+              <b>场次表发布</b>
+              <p>制作组公布三幕场次与角色编号对照。</p>
+            </li>
+            <li>
+              <time>2026年10月23日</time>
+              <b>妆造说明更新</b>
+              <p>黑羽披肩列为第二幕固定件，标注重量与层数。</p>
+            </li>
+            <li>
+              <time>2026年10月26日</time>
+              <b>短片《镜厅女王》上线</b>
+              <p>分镜本随片尾字幕公开，第7镜采用 C 版走位。</p>
+            </li>
+            <li>
+              <time>2026年11月3日</time>
+              <b>排练记录修订台词第14句</b>
+              <p>“灯亮之前”改为“灯亮之后”。</p>
+            </li>
+            <li>
+              <time>2026年11月5日</time>
+              <b>衍生展开幕</b>
+              <p>展签 01 至 12 陈列，分时段预约开放。</p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="block" id="faq">
+          <div class="block-head">
+            <h2>常见问题</h2>
+            <span class="en">FAQ</span>
+          </div>
+          <div class="faq">
+            <details>
+              <summary>女王vk舞台剧《夜巡女王》里的黑羽披肩是道具还是戏服设定？</summary>
+              <div class="ans">是戏服设定。造型组在2026年10月23日的妆造说明里把它列为第二幕固定件，黑羽共九层，重量约1.8公斤，拍摄间隙需要专人托举。衍生展把它标为可拆卸件，是布展需要，不改变舞台版本。</div>
+            </details>
+            <details>
+              <summary>女王vk短片的角色顺序和舞台剧版本对不上吗？</summary>
+              <div class="ans">对不上。短片《镜厅女王》按拍摄顺序排镜头，舞台剧按剧情时间线排场次，两套顺序在官方日程表中分别标注。角色编号 VK-C 系列按出场顺序分配，与戏份权重无关，混用会得出错误结论。</div>
+            </details>
+            <details>
+              <summary>女王vk的角色档案为什么有两种编号？</summary>
+              <div class="ans">档案编号按首演日期分配，角色编号按出场顺序分配。2026年10月版本把两套编号并列，观众常把角色编号当成出场次数。查档案时先看 VK-A 系列，再看 VK-C 系列，两者不互相替代。</div>
+            </details>
+            <details>
+              <summary>女王vk官网收录的访谈稿经过删改吗？</summary>
+              <div class="ans">部分经过删改。2026年10月28日的访谈原始录音时长72分钟，公开稿为47分钟，删减段落集中在排期与合约部分。被删的前后上下文会影响对“黑羽”含义的解读。</div>
+            </details>
+            <details>
+              <summary>女王vk相关衍生展是否需要预约？</summary>
+              <div class="ans">需要。2026年11月5日起的衍生展采取分时段预约，每场限40人，现场仅保留少量候补名额。展期到11月29日，展签共12个。</div>
+            </details>
+            <details>
+              <summary>女王vk的妆造手稿能对外引用吗？</summary>
+              <div class="ans">可以引用但需注明手稿编号。手稿共31张，编号 VK-M01 至 VK-M31，其中7张标注了不可商用限制，VK-M29 是其中之一。</div>
+            </details>
+          </div>
+        </section>
+
+        <section class="block" id="comments">
+          <div class="block-head">
+            <h2>观众评论</h2>
+            <span class="en">Comments</span>
+          </div>
+          <div class="comments">
+            <div class="cmt">
+              <div class="who"><span class="av">林</span><span class="name">林屿</span><span class="when">11月7日</span></div>
+              <div class="txt">第二幕披肩九层叠起来确实好看，但1.8公斤挂在肩上，托举的人比演员还累。这一点妆造说明写得比展签实在。</div>
+              <div class="ref">指向：VK-M18 · 黑羽披肩</div>
+            </div>
+            <div class="cmt">
+              <div class="who"><span class="av">周</span><span class="name">周四的票</span><span class="when">11月6日</span></div>
+              <div class="txt">短片第7镜的 C 版走位，镜面里同时看见两个替身，第一次看有点晕。分镜本附录解释得清楚，公开稿就没提。</div>
+              <div class="ref">指向：《镜厅女王》第7镜</div>
+            </div>
+            <div class="cmt">
+              <div class="who"><span class="av">阿</span><span class="name">阿盏</span><span class="when">11月6日</span></div>
+              <div class="txt">VK-C01 排在第一位，结果舞台剧第三幕才给台词，角色编号这套规则应该写在展签最前面，现在得自己翻表。</div>
+              <div class="ref">指向：VK-C01 · 镜厅引路人</div>
+            </div>
+            <div class="cmt">
+              <div class="who"><span class="av">沈</span><span class="name">沈默</span><span class="when">11月5日</span></div>
+              <div class="txt">访谈公开稿47分钟，删掉的正好是我想听的部分。原始录音不对外，只能靠妆造说明里那句“给第二幕留的”自己补上下文。</div>
+              <div class="ref">指向：10月28日访谈稿</div>
+            </div>
+            <div class="cmt">
+              <div class="who"><span class="av">陈</span><span class="name">陈序</span><span class="when">11月5日</span></div>
+              <div class="txt">衍生展的候补名额不多，我11月5日去的时候现场只剩3个位置。分时段预约这件事，公告写得比页面清楚。</div>
+              <div class="ref">指向：衍生展预约</div>
+            </div>
+            <div class="cmt">
+              <div class="who"><span class="av">南</span><span class="name">南枝</span><span class="when">11月4日</span></div>
+              <div class="txt">台词第14句从“之前”改成“之后”，半拍之差，披肩出场时机变了。排练记录里有写，但没几个人注意到。</div>
+              <div class="ref">指向：排练记录 VK-R-20261103</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="block" id="news">
+          <div class="block-head">
+            <h2>相关资讯</h2>
+            <span class="en">News</span>
+          </div>
+          <ul class="news-list">
+            <li><time>11月7日</time><b>妆造手稿 VK-M25 至 VK-M31 补录</b><span>含3张色卡、4张披肩局部放大图。</span></li>
+            <li><time>11月6日</time><b>访谈稿版本说明更新</b><span>原始录音72分钟，公开稿47分钟。</span></li>
+            <li><time>11月5日</time><b>衍生展分时段预约开放</b><span>每场40人，展期至11月29日。</span></li>
+            <li><time>11月3日</time><b>排练记录修订台词第14句</b><span>“灯亮之前”改为“灯亮之后”。</span></li>
+            <li><time>10月31日</time><b>短片片尾字幕补挂名单</b><span>补挂4位造型助理，与分镜本附录一致。</span></li>
+            <li><time>10月26日</time><b>《镜厅女王》分镜本公开</b><span>第7镜标注 A、B、C 三版走位。</span></li>
+          </ul>
+        </section>
+
+        <section class="block" id="rank">
+          <div class="block-head">
+            <h2>检索热度榜</h2>
+            <span class="en">Ranking</span>
+          </div>
+          <div class="side-card" style="margin-bottom:0">
+            <ol class="rank">
+              <li><b>01</b><span>黑羽披肩 · 九层结构与重量</span></li>
+              <li><b>02</b><span>VK-C01 角色编号与出场顺序</span></li>
+              <li><b>03</b><span>《镜厅女王》第7镜三版走位</span></li>
+              <li><b>04</b><span>访谈稿删减段落对比</span></li>
+              <li><b>05</b><span>衍生展分时段预约规则</span></li>
+              <li><b>06</b><span>台词第14句修订时间</span></li>
+            </ol>
+            <p class="side-note">排序依据为11月1日至11月7日的站内检索次数，数据为示例。</p>
+          </div>
+        </section>
+
+        <section class="block" id="tags">
+          <div class="block-head">
+            <h2>相关推荐标签</h2>
+            <span class="en">Tags</span>
+          </div>
+          <div class="tags">
+            <a href="/#deep">黑羽披肩九层结构</a>
+            <a href="/#deep">角色编号 VK-C 系列</a>
+            <a href="/#deep">镜厅女王第7镜</a>
+            <a href="/#guide">妆造手稿 VK-M 系列</a>
+            <a href="/#timeline">夜巡女王三幕场次</a>
+            <a href="/#faq">访谈稿删减段落</a>
+            <a href="/#updates">衍生展展签编号</a>
+            <a href="/#compare">舞台版与短片版对照</a>
+            <a href="/#news">排练记录台词修订</a>
+          </div>
+        </section>
+
+      </div>
+
+      <aside class="side-col">
+        <div class="side-card">
+          <h2>栏目导航<span>Sections</span></h2>
+          <ul class="side-nav" id="sideNav">
+            <li><a href="/#overview">领域概览</a></li>
+            <li><a href="/#featured">精选推荐</a></li>
+            <li><a href="/#updates">最新更新</a></li>
+            <li><a href="/#channels">分类入口</a></li>
+            <li><a href="/#deep">深度解析</a></li>
+            <li><a href="/#guide">体验指南</a></li>
+            <li><a href="/#compare">版本对照</a></li>
+            <li><a href="/#timeline">作品年表</a></li>
+            <li><a href="/#faq">常见问题</a></li>
+            <li><a href="/#comments">观众评论</a></li>
+          </ul>
+        </div>
+        <div class="side-card">
+          <h2>编号速查<span>Quick Ref</span></h2>
+          <p class="side-note" style="font-size:13px;color:var(--ink-soft)">
+            VK-A：档案编号，按首演日期分配。<br>
+            VK-C：角色编号，按出场顺序分配。<br>
+            VK-M：妆造手稿，共31张。<br>
+            VK-R：排练记录，按日期编号。
+          </p>
+        </div>
+        <div class="side-card">
+          <h2>本期提示<span>Notice</span></h2>
+          <p class="side-note" style="font-size:13px;color:var(--ink-soft)">衍生展11月5日至11月29日，每场40人。展签与排演文件不一致时，以求证文件的编号所在版本为准。</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="fl">
+        <div class="foot-brand">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#e9c46a"></rect>
+            <path d="M20 46 L32 16 L44 46 Z" fill="none" stroke="#492b4f" stroke-width="4" stroke-linejoin="round"></path>
+            <circle cx="32" cy="38" r="4" fill="#492b4f"></circle>
+          </svg>
+          女王vk官网
+        </div>
+        <p>按编号、日期与文件名整理角色档案，交叉引用时先把编号归属对清楚，再谈角色关系。</p>
+        <p style="color:#a98ea6;font-size:12.5px">示例数据说明：站内条目、评论、检索次数为示例生成，日期截至2026年11月8日；涉及排期与合约的段落以官方公开稿为准。</p>
+      </div>
+      <div>
+        <h3>内容栏目</h3>
+        <ul>
+          <li><a href="/#overview">领域概览</a></li>
+          <li><a href="/#featured">精选推荐</a></li>
+          <li><a href="/#updates">最新更新</a></li>
+          <li><a href="/#channels">分类入口</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>阅读与工具</h3>
+        <ul>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#compare">版本对照</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>互动与索引</h3>
+        <ul>
+          <li><a href="/#comments">观众评论</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#rank">检索热度榜</a></li>
+          <li><a href="/#tags">相关推荐标签</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span class="demo">更新时间：2026年11月7日，对应更新项为妆造手稿补录与访谈稿版本说明。</span>
+      <span>© 2026 女王vk官网 · 角色档案资料整理</span>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  var menuBtn=document.getElementById('menuBtn');
+  var nav=document.getElementById('mainNav');
+  if(menuBtn&&nav){
+    menuBtn.addEventListener('click',function(){
+      var open=nav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded',open?'true':'false');
+    });
+    nav.addEventListener('click',function(e){
+      if(e.target.tagName==='A'&&window.innerWidth<=980){
+        nav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  var toTop=document.getElementById('toTop');
+  window.addEventListener('scroll',function(){
+    if(window.scrollY>420){toTop.classList.add('show');}else{toTop.classList.remove('show');}
+  },{passive:true});
+  toTop.addEventListener('click',function(){
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+
+  var navLinks=Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var sections=navLinks.map(function(a){
+    return document.getElementById(a.getAttribute('href').slice(2));
+  });
+  function highlight(){
+    var pos=window.scrollY+180;
+    var idx=0;
+    for(var i=0;i<sections.length;i++){
+      if(sections[i]&&sections[i].offsetTop<=pos){idx=i;}
+    }
+    navLinks.forEach(function(a,i){
+      a.classList.toggle('active',i===idx);
+    });
+  }
+  window.addEventListener('scroll',highlight,{passive:true});
+  highlight();
+
+  var input=document.getElementById('searchInput');
+  var btn=document.getElementById('searchBtn');
+  var status=document.getElementById('searchStatus');
+
+  function runSearch(){
+    var q=(input.value||'').trim();
+    if(!q){status.classList.remove('show');status.textContent='';return;}
+    var nodes=document.querySelectorAll('main h1, main h2, main h3, main p, main li, main summary, main .tags a');
+    var hit=null;
+    for(var i=0;i<nodes.length;i++){
+      if(nodes[i].textContent.indexOf(q)>-1){hit=nodes[i];break;}
+    }
+    if(hit){
+      status.classList.add('show');
+      status.textContent='找到与“'+q+'”相关的内容，已定位到该段附近。';
+      var y=hit.getBoundingClientRect().top+window.scrollY-140;
+      window.scrollTo({top:y,behavior:'smooth'});
+    }else{
+      status.classList.add('show');
+      status.textContent='没有找到与“'+q+'”匹配的条目。可尝试“黑羽”“VK-C01”“第7镜”或“妆造手稿”。';
+    }
+  }
+  btn.addEventListener('click',runSearch);
+  input.addEventListener('keydown',function(e){
+    if(e.key==='Enter'){e.preventDefault();runSearch();}
+  });
+
+  document.querySelectorAll('a[href^="/#"]').forEach(function(a){
+    a.addEventListener('click',function(e){
+      var id=a.getAttribute('href').slice(2);
+      var el=document.getElementById(id);
+      if(el){
+        e.preventDefault();
+        var y=el.getBoundingClientRect().top+window.scrollY-120;
+        window.scrollTo({top:y,behavior:'smooth'});
+        history.replaceState(null,'','#'+id);
+      }
+    });
+  });
+})();
+</script>
+</body>
+              </html>
