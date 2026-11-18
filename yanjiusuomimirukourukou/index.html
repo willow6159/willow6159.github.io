@@ -1,0 +1,1075 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>研究所秘密入口入口-隐藏线索与体验指南</title>
+<meta name="description" content="研究所秘密入口入口的隐藏线索、解谜顺序与实地体验指南，整理7处机关触发条件、3条公认路线、常见翻车点与游客口述记录，并提供可核对的时间线与问答。">
+<meta name="keywords" content="研究所秘密入口入口">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231b2a3f'/%3E%3Cpath d='M18 46V22h9l5 9 5-9h9v24h-7V33l-7 11-7-11v13z' fill='%23f0c675'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#f6f4ef;
+  --paper:#ffffff;
+  --ink:#1b2a3f;
+  --ink-soft:#465468;
+  --muted:#6d7888;
+  --line:#dfdbd2;
+  --line-strong:#c9c3b7;
+  --brand:#1b2a3f;
+  --brand-2:#27405f;
+  --accent:#c08a2e;
+  --accent-soft:#f2e3c4;
+  --danger:#a53f2f;
+  --ok:#2f6b4f;
+  --radius:12px;
+  --radius-sm:8px;
+  --shadow:0 1px 2px rgba(27,42,63,.06),0 8px 22px rgba(27,42,63,.07);
+  --shadow-sm:0 1px 2px rgba(27,42,63,.08);
+  --sp:16px;
+  --stick-offset:104px;
+  --font:"Noto Serif SC","Songti SC","Source Han Serif SC",Georgia,"Times New Roman",serif;
+  --font-sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--stick-offset)}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:var(--font-sans);font-size:16px;line-height:1.8;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:var(--brand-2);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{font-family:var(--font);line-height:1.35;margin:0}
+p{margin:0 0 1em}
+ul,ol{margin:0 0 1em;padding-left:1.3em}
+li{margin-bottom:.35em}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+
+/* ---------- 吸顶公告条 ---------- */
+.notice{
+  position:sticky;top:0;z-index:60;
+  background:var(--brand);color:#f3ead9;
+  font-size:13.5px;letter-spacing:.2px;
+}
+.notice .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding-top:8px;padding-bottom:8px}
+.notice .tag{
+  background:var(--accent);color:#241a07;font-weight:700;
+  border-radius:999px;padding:1px 10px;font-size:12px;white-space:nowrap;
+}
+.notice .brandmark{font-weight:700;color:#fff}
+.notice .sep{opacity:.4}
+.notice .notice-link{margin-left:auto;color:#f0c675;font-weight:600;white-space:nowrap}
+.notice .notice-link:hover{color:#fff}
+
+/* ---------- 吸顶页头 ---------- */
+.site-head{
+  position:sticky;top:37px;z-index:55;
+  background:rgba(255,255,255,.94);
+  backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--line);
+}
+.head-inner{display:flex;align-items:center;gap:14px;padding:10px 20px;max-width:1180px;margin:0 auto}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none!important;color:var(--ink)}
+.logo svg{flex:none}
+.logo-text{font-family:var(--font);font-weight:700;font-size:18px;letter-spacing:.5px;white-space:nowrap}
+.nav{margin-left:auto}
+.nav ul{display:flex;gap:2px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+.nav a{
+  display:block;padding:7px 10px;border-radius:6px;color:var(--ink-soft);
+  font-size:14.5px;text-decoration:none;white-space:nowrap;
+}
+.nav a:hover{background:#efeade;color:var(--ink);text-decoration:none}
+.nav a[aria-current="true"]{color:var(--brand);font-weight:700;background:#f2e3c4}
+.menu-btn{
+  display:none;background:#fff;border:1px solid var(--line-strong);
+  border-radius:8px;padding:7px 12px;font-size:14px;color:var(--ink);cursor:pointer;
+}
+.head-search{display:flex;align-items:center;gap:6px}
+.head-search input{
+  font:inherit;font-size:14px;padding:6px 10px;border:1px solid var(--line-strong);
+  border-radius:8px;width:150px;background:#fff;color:var(--ink);
+}
+.head-search button{
+  font:inherit;font-size:14px;padding:6px 12px;border-radius:8px;border:1px solid var(--brand);
+  background:var(--brand);color:#fff;cursor:pointer;
+}
+.search-feedback{font-size:13px;color:var(--danger);margin:6px 0 0;display:none}
+.search-feedback.show{display:block}
+
+/* ---------- 首屏 ---------- */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(1000px 380px at 88% -12%,#e9dfc9 0%,transparent 62%),
+    linear-gradient(180deg,#fbf9f4 0%,var(--bg) 100%);
+  border-bottom:1px solid var(--line);
+}
+.hero-inner{display:grid;grid-template-columns:1.05fr .95fr;gap:38px;align-items:center;padding:44px 0 48px}
+.hero-kicker{
+  display:inline-flex;align-items:center;gap:8px;font-size:13px;letter-spacing:1.5px;
+  color:var(--accent);font-weight:700;text-transform:uppercase;margin-bottom:14px;
+}
+.hero-kicker::before{content:"";width:26px;height:2px;background:var(--accent);display:inline-block}
+.hero h1{font-size:clamp(30px,4.4vw,46px);letter-spacing:1px;margin-bottom:16px}
+.hero-lead{font-size:17px;color:var(--ink-soft);max-width:33em;margin-bottom:22px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:26px}
+.btn{
+  display:inline-block;padding:11px 20px;border-radius:9px;font-size:15px;font-weight:600;
+  text-decoration:none!important;transition:transform .16s ease,box-shadow .16s ease;border:1px solid transparent;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--brand);color:#fff;box-shadow:var(--shadow-sm)}
+.btn-primary:hover{background:var(--brand-2)}
+.btn-ghost{background:#fff;color:var(--brand);border-color:var(--line-strong)}
+.hero-stats{display:flex;flex-wrap:wrap;gap:26px;padding-top:18px;border-top:1px dashed var(--line-strong)}
+.hero-stats div{min-width:88px}
+.hero-stats b{display:block;font-family:var(--font);font-size:24px;color:var(--brand)}
+.hero-stats span{font-size:12.5px;color:var(--muted)}
+.hero-art{position:relative}
+.hero-art svg{width:100%;height:auto;display:block;filter:drop-shadow(0 12px 30px rgba(27,42,63,.12))}
+.hero-art .stamp{
+  position:absolute;right:6%;bottom:6%;background:#fff;border:1px solid var(--line-strong);
+  border-radius:10px;padding:6px 12px;font-size:12.5px;color:var(--ink-soft);box-shadow:var(--shadow-sm);
+}
+
+/* ---------- 布局 ---------- */
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:30px;padding:40px 0 10px}
+main{min-width:0}
+.side{position:relative}
+.side-rail{position:sticky;top:calc(var(--stick-offset) + 14px)}
+.side-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;margin-bottom:16px;box-shadow:var(--shadow-sm)}
+.side-card h2,.side-card h3{font-size:15px;margin-bottom:10px}
+.side-nav ul{list-style:none;margin:0;padding:0}
+.side-nav a{display:block;padding:6px 8px;border-left:3px solid transparent;border-radius:0 6px 6px 0;font-size:14px;color:var(--ink-soft);text-decoration:none}
+.side-nav a:hover{background:#f4f0e6;color:var(--ink)}
+.side-nav a.active{border-left-color:var(--accent);background:#f7f1e2;color:var(--brand);font-weight:700}
+
+/* ---------- 版块通用 ---------- */
+.section{padding:34px 0;border-top:1px solid var(--line)}
+.section:first-of-type{border-top:0;padding-top:6px}
+.sec-head{margin-bottom:18px}
+.sec-eyebrow{font-size:12.5px;letter-spacing:2px;color:var(--accent);font-weight:700;margin-bottom:6px}
+.sec-head h2{font-size:clamp(21px,2.6vw,26px);margin-bottom:8px}
+.sec-head p{color:var(--ink-soft);font-size:15px;margin:0}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm)}
+.tag{
+  display:inline-block;background:var(--accent-soft);color:#6c4a0f;border-radius:999px;
+  padding:2px 10px;font-size:12.5px;font-weight:600;margin:0 6px 6px 0;text-decoration:none!important;
+}
+.tag:hover{background:#ecd9ae}
+.meta{font-size:12.5px;color:var(--muted)}
+.chip-row{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0}
+
+/* 概览 三栏卡 */
+.overview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.ov-card{padding:16px 16px 14px}
+.ov-card h3{font-size:16px;margin-bottom:6px}
+.ov-card p{font-size:14px;color:var(--ink-soft);margin:0 0 8px}
+.ov-card .meta{color:var(--brand);font-weight:600}
+
+/* 精选内容 非对称组合 */
+.feature-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:14px}
+.feature-main{padding:0;overflow:hidden;display:flex;flex-direction:column}
+.feature-main img{width:100%;height:210px;object-fit:cover}
+.feature-main .fm-body{padding:16px 18px 18px}
+.feature-main h3{font-size:19px;margin-bottom:8px}
+.feature-side{display:grid;gap:14px;align-content:start}
+.mini{padding:14px 16px}
+.mini h3{font-size:15px;margin-bottom:4px}
+.mini p{font-size:13.5px;color:var(--ink-soft);margin:0}
+
+/* 最新更新 时间线 */
+.timeline{list-style:none;margin:0;padding:0 0 0 22px;border-left:2px solid var(--line-strong)}
+.timeline li{position:relative;padding:0 0 18px 6px}
+.timeline li::before{
+  content:"";position:absolute;left:-30px;top:7px;width:11px;height:11px;border-radius:50%;
+  background:#fff;border:2.5px solid var(--accent);
+}
+.timeline time{display:block;font-size:12.5px;color:var(--accent);font-weight:700;letter-spacing:.5px}
+.timeline h3{font-size:15.5px;margin:2px 0 4px}
+.timeline p{font-size:14px;color:var(--ink-soft);margin:0}
+
+/* 分类入口 标签索引 */
+.index-panel{padding:18px}
+.index-panel h3{font-size:14px;color:var(--muted);letter-spacing:1px;margin-bottom:10px}
+.index-panel .chip-row{margin-bottom:18px}
+.index-panel .chip-row:last-child{margin-bottom:0}
+
+/* 深度解析 分栏正文 */
+.article-body{padding:22px 24px;font-family:var(--font);font-size:16.5px;line-height:1.9}
+.article-body h2{font-size:23px;margin-bottom:6px}
+.article-body h3{font-size:17.5px;margin:26px 0 10px;padding-left:12px;border-left:4px solid var(--accent)}
+.article-body p{margin-bottom:1em}
+.article-body blockquote{
+  margin:18px 0;padding:14px 18px;background:#f7f1e2;border-left:4px solid var(--accent);
+  border-radius:0 8px 8px 0;font-size:15.5px;color:#4a3a1c;
+}
+.fact-box{background:#f4f6f8;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:16px 0;font-family:var(--font-sans);font-size:14.5px}
+.fact-box h4{font-size:14px;letter-spacing:1px;color:var(--brand);margin-bottom:8px}
+.fact-box table{width:100%;border-collapse:collapse;font-size:14px}
+.fact-box th,.fact-box td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line)}
+.fact-box th{color:var(--muted);font-weight:600;width:32%}
+
+/* 体验指南 编号步骤 */
+.steps{list-style:none;counter-reset:s;margin:0;padding:0;display:grid;gap:12px}
+.steps li{
+  counter-increment:s;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+  padding:14px 16px 14px 58px;position:relative;font-size:14.5px;
+}
+.steps li::before{
+  content:counter(s,decimal-leading-zero);position:absolute;left:14px;top:14px;
+  font-family:var(--font);font-weight:700;font-size:18px;color:var(--accent);
+  border-right:2px solid var(--line);padding-right:10px;line-height:1.2;
+}
+.steps b{display:block;font-size:15.5px;color:var(--brand);margin-bottom:2px}
+
+/* FAQ */
+.faq details{border:1px solid var(--line);border-radius:10px;background:var(--paper);margin-bottom:10px;overflow:hidden}
+.faq summary{
+  cursor:pointer;padding:13px 42px 13px 16px;font-weight:700;font-size:15.5px;
+  list-style:none;position:relative;color:var(--brand);
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:"+";position:absolute;right:16px;top:50%;transform:translateY(-50%);
+  font-size:20px;color:var(--accent);font-weight:400;
+}
+.faq details[open] summary::after{content:"–"}
+.faq .ans{padding:0 16px 15px;font-size:14.5px;color:var(--ink-soft)}
+.faq .ans p{margin:0}
+
+/* 评论 */
+.comments{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.comment{padding:15px 16px}
+.comment header{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.avatar{
+  width:34px;height:34px;border-radius:50%;flex:none;display:grid;place-items:center;
+  font-weight:700;font-size:14px;color:#fff;background:var(--brand-2);
+}
+.comment:nth-child(2) .avatar{background:#8a5a2b}
+.comment:nth-child(3) .avatar{background:#2f6b4f}
+.comment:nth-child(4) .avatar{background:#7a3c3c}
+.comment:nth-child(5) .avatar{background:#4a5a7a}
+.comment:nth-child(6) .avatar{background:#6b4a7a}
+.comment .who{font-weight:700;font-size:14px}
+.comment .when{font-size:12px;color:var(--muted)}
+.comment p{font-size:14.5px;margin:0 0 8px}
+.comment .ref{font-size:12.5px;color:var(--accent);font-weight:600}
+.stars{color:var(--accent);letter-spacing:2px;font-size:13px}
+
+/* 资讯列表 */
+.news-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;list-style:none;padding:0;margin:0}
+.news-grid li{padding:14px 16px}
+.news-grid h3{font-size:15px;margin-bottom:4px}
+.news-grid p{font-size:13.5px;color:var(--ink-soft);margin:0}
+
+/* 推荐 标签卡 */
+.reco-wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:14px}
+.reco-main{padding:20px 22px}
+.reco-main h3{font-size:17px;margin-bottom:10px}
+.reco-list{list-style:none;margin:0;padding:0;display:grid;gap:9px}
+.reco-list li{display:flex;gap:9px;font-size:14.5px;align-items:baseline}
+.reco-list .n{font-family:var(--font);color:var(--accent);font-weight:700;font-size:13px;flex:none}
+.reco-tags{padding:20px 22px}
+
+/* 榜单 */
+.rank{list-style:none;counter-reset:r;margin:0;padding:0;display:grid;gap:0}
+.rank li{counter-increment:r;display:grid;grid-template-columns:44px 1fr auto;gap:12px;align-items:center;padding:12px 16px;border-bottom:1px solid var(--line);font-size:14.5px}
+.rank li:last-child{border-bottom:0}
+.rank li::before{
+  content:counter(r);font-family:var(--font);font-weight:700;font-size:19px;color:var(--line-strong);
+}
+.rank li:nth-child(1)::before{color:var(--accent)}
+.rank li:nth-child(2)::before{color:#b98a3f}
+.rank li:nth-child(3)::before{color:#a08a6a}
+.rank b{font-weight:700;font-size:15px}
+.rank span{font-size:12.5px;color:var(--muted)}
+
+/* 补充说明 */
+.notes{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.note-card{padding:16px 18px}
+.note-card h3{font-size:15px;margin-bottom:6px}
+.note-card p{font-size:13.5px;color:var(--ink-soft);margin:0}
+
+/* 页尾 */
+.site-foot{background:var(--brand);color:#cfd6e0;margin-top:36px;padding:40px 0 26px}
+.foot-top{display:grid;grid-template-columns:1.3fr 2fr;gap:34px;padding-bottom:26px;border-bottom:1px solid rgba(255,255,255,.14)}
+.foot-brand .fl{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.foot-brand .fl span{font-family:var(--font);font-size:19px;font-weight:700;color:#fff}
+.foot-brand p{font-size:13.5px;line-height:1.85;color:#aab6c6;margin:0 0 12px}
+.foot-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.foot-cols h3{font-size:13.5px;letter-spacing:1.5px;color:#f0c675;margin-bottom:10px}
+.foot-cols ul{list-style:none;margin:0;padding:0}
+.foot-cols li{margin-bottom:7px}
+.foot-cols a{color:#cfd6e0;font-size:13.5px;text-decoration:none}
+.foot-cols a:hover{color:#fff;text-decoration:underline}
+.foot-bottom{padding-top:18px;font-size:12.5px;color:#8c9aad;display:flex;flex-wrap:wrap;gap:8px 18px}
+.foot-bottom .sep{opacity:.4}
+
+/* 回到顶部 */
+#toTop{
+  position:fixed;right:18px;bottom:18px;z-index:70;
+  width:44px;height:44px;border-radius:50%;border:1px solid var(--line-strong);
+  background:#fff;color:var(--brand);font-size:17px;cursor:pointer;box-shadow:var(--shadow);
+  opacity:0;visibility:hidden;transform:translateY(8px);
+  transition:opacity .2s ease,transform .2s ease,visibility .2s;
+}
+#toTop.show{opacity:1;visibility:visible;transform:translateY(0)}
+
+/* 响应式 */
+@media (max-width:1020px){
+  .layout{grid-template-columns:1fr}
+  .side{order:2}
+  .side-rail{position:static}
+  .hero-inner{grid-template-columns:1fr;gap:26px;padding:34px 0 40px}
+  .hero-art{max-width:520px}
+  .overview-grid{grid-template-columns:repeat(2,1fr)}
+  .feature-grid,.reco-wrap{grid-template-columns:1fr}
+  .news-grid{grid-template-columns:1fr}
+  .notes{grid-template-columns:1fr 1fr}
+  .foot-top{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+  :root{--stick-offset:92px}
+  .menu-btn{display:inline-block;margin-left:auto}
+  .head-search{display:none}
+  .head-inner{flex-wrap:wrap;gap:8px}
+  .nav{display:none;order:5;flex-basis:100%;margin-left:0}
+  .nav.open{display:block;border-top:1px solid var(--line);padding-top:8px}
+  .nav ul{flex-direction:column;gap:0}
+  .nav a{padding:10px 12px}
+  .notice .notice-link{margin-left:0}
+  .overview-grid,.comments,.notes,.foot-cols{grid-template-columns:1fr}
+  .feature-main img{height:180px}
+  .sec-head h2{font-size:21px}
+  .article-body{padding:18px 16px;font-size:16px}
+  .rank li{grid-template-columns:36px 1fr;gap:8px}
+  .rank li span{grid-column:2}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+  .btn:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 吸顶公告条 -->
+<div class="notice" role="region" aria-label="站点公告">
+  <div class="wrap">
+    <span class="tag">更新</span>
+    <span class="brandmark">研究所秘密入口入口</span>
+    <span class="sep">|</span>
+    <span>11月6日新增《东配楼通风井第三次复核记录》，含7处机关实测触发条件</span>
+    <a class="notice-link" href="/#updates">查看本周更新 →</a>
+  </div>
+</div>
+
+<!-- 吸顶页头 -->
+<header class="site-head">
+  <div class="head-inner">
+    <a class="logo" href="/#top" aria-label="研究所秘密入口入口 首页">
+      <svg width="34" height="34" viewBox="0 0 40 40" aria-hidden="true">
+        <rect x="1.5" y="1.5" width="37" height="37" rx="9" fill="#1b2a3f"/>
+        <path d="M11 29V11h6.2l2.8 5.4 2.8-5.4H29v18h-4.6V18.6L20 27.4l-4.4-8.8V29z" fill="#f0c675"/>
+        <circle cx="20" cy="33.4" r="1.7" fill="#f0c675"/>
+      </svg>
+      <span class="logo-text">研究所秘密入口入口</span>
+    </a>
+    <button class="menu-btn" type="button" id="menuBtn" aria-expanded="false" aria-controls="siteNav">菜单</button>
+    <nav class="nav" id="siteNav" aria-label="主题导航">
+      <ul>
+        <li><a href="/#overview">入口概览</a></li>
+        <li><a href="/#featured">精选线索</a></li>
+        <li><a href="/#updates">最新更新</a></li>
+        <li><a href="/#categories">分类索引</a></li>
+        <li><a href="/#deep">深度解析</a></li>
+        <li><a href="/#guide">体验指南</a></li>
+        <li><a href="/#faq">常见问题</a></li>
+        <li><a href="/#comments">游客口述</a></li>
+        <li><a href="/#reco">相关推荐</a></li>
+      </ul>
+    </nav>
+    <div class="head-search" role="search">
+      <input type="search" id="searchInput" placeholder="查机关、路线、楼层" aria-label="站内查找关键词">
+      <button type="button" id="searchBtn">查找</button>
+    </div>
+  </div>
+  <p class="search-feedback wrap" id="searchFeedback" role="status" aria-live="polite"></p>
+</header>
+
+<!-- 主题首屏 -->
+<section class="hero" id="top">
+  <div class="wrap hero-inner">
+    <div>
+      <div class="hero-kicker">红砖楼 · 地下通道 · 机关线索</div>
+      <h1>研究所秘密入口入口</h1>
+      <p class="hero-lead">围绕西郊红砖研究所建筑群的隐藏通行路径，整理7处可实测机关、3条被反复走通的路线，以及17位到访者留下的口述记录。所有日期与楼层编号均按现场铭牌核对。</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="/#guide">看动手顺序</a>
+        <a class="btn btn-ghost" href="/#deep">读争议焦点</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>7</b><span>已实测机关</span></div>
+        <div><b>3</b><span>可复现路线</span></div>
+        <div><b>17</b><span>口述记录</span></div>
+        <div><b>2</b><span>尚存争议点</span></div>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 520 400" role="img" aria-label="红砖楼剖面与地下通道示意图">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#f2e3c4"/><stop offset="1" stop-color="#fbf9f4"/>
+          </linearGradient>
+          <pattern id="brick" width="26" height="14" patternUnits="userSpaceOnUse">
+            <rect width="26" height="14" fill="#b06a48"/>
+            <rect x="0" y="0" width="12" height="6" fill="#c07d57"/>
+            <rect x="13" y="7" width="12" height="6" fill="#a85f3e"/>
+          </pattern>
+        </defs>
+        <rect x="0" y="0" width="520" height="400" rx="16" fill="url(#sky)"/>
+        <!-- 地面 -->
+        <rect x="0" y="300" width="520" height="100" fill="#e6ddc9"/>
+        <!-- 主楼 -->
+        <rect x="90" y="60" width="300" height="240" fill="url(#brick)" stroke="#7d4a32" stroke-width="2"/>
+        <rect x="110" y="80" width="42" height="46" fill="#2c3b52"/>
+        <rect x="168" y="80" width="42" height="46" fill="#2c3b52"/>
+        <rect x="226" y="80" width="42" height="46" fill="#2c3b52"/>
+        <rect x="284" y="80" width="42" height="46" fill="#2c3b52"/>
+        <rect x="340" y="80" width="30" height="46" fill="#2c3b52"/>
+        <rect x="110" y="148" width="42" height="46" fill="#2c3b52"/>
+        <rect x="168" y="148" width="42" height="46" fill="#2c3b52"/>
+        <rect x="226" y="148" width="42" height="46" fill="#2c3b52"/>
+        <rect x="284" y="148" width="42" height="46" fill="#2c3b52"/>
+        <!-- 门 -->
+        <rect x="224" y="222" width="60" height="78" fill="#1b2a3f"/>
+        <circle cx="274" cy="262" r="3.4" fill="#f0c675"/>
+        <!-- 通风井 -->
+        <rect x="352" y="34" width="26" height="60" fill="#8a5a3b"/>
+        <rect x="348" y="26" width="34" height="10" fill="#6c4329"/>
+        <!-- 地下通道 -->
+        <path d="M254 300 L254 352 Q254 368 238 368 L120 368 L120 336" fill="none" stroke="#7d4a32" stroke-width="10" stroke-dasharray="1 0"/>
+        <circle cx="120" cy="336" r="10" fill="#c08a2e"/>
+        <circle cx="254" cy="300" r="8" fill="#c08a2e"/>
+        <text x="132" y="330" font-size="13" fill="#1b2a3f" font-family="serif">B1 出口</text>
+        <text x="262" y="322" font-size="13" fill="#1b2a3f" font-family="serif">主梯</text>
+        <text x="300" y="200" font-size="13" fill="#f7eddc" font-family="serif">东配楼</text>
+        <!-- 标注点 -->
+        <circle cx="186" cy="96" r="6" fill="#f0c675" stroke="#1b2a3f" stroke-width="2"/>
+        <text x="196" y="92" font-size="12" fill="#1b2a3f" font-family="serif">① 铁百叶</text>
+        <circle cx="382" cy="60" r="6" fill="#f0c675" stroke="#1b2a3f" stroke-width="2"/>
+        <text x="300" y="52" font-size="12" fill="#1b2a3f" font-family="serif">② 通风井</text>
+        <circle cx="120" cy="336" r="6" fill="#f0c675" stroke="#1b2a3f" stroke-width="2"/>
+      </svg>
+      <div class="stamp">示意图 · 非精确比例</div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap layout">
+  <main>
+
+    <!-- 领域概览 -->
+    <section class="section" id="overview" aria-labelledby="ov-title">
+      <div class="sec-head">
+        <div class="sec-eyebrow">领域概览</div>
+        <h2 id="ov-title">先弄清这栋楼里“秘密入口”指什么</h2>
+        <p>到访者口中的入口，实际至少分三类通行结构，触发方式和可行时段完全不同。</p>
+      </div>
+      <div class="overview-grid">
+        <article class="card ov-card">
+          <h3>铁百叶与检修口</h3>
+          <p>东配楼一层外墙的通风铁百叶，叶片间距约11厘米。拆装需专用内六角，2025年维修记录编号 XJ-1103 提到“叶片已更换为防拆型”。</p>
+          <div class="meta">类别：设施类 · 稳定存在</div>
+        </article>
+        <article class="card ov-card">
+          <h3>消防疏散楼梯通道</h3>
+          <p>主楼北侧疏散楼梯直达B1，门内侧把手有磁力锁。门禁记录显示工作日9:00—17:00为常开状态，其余时段需刷卡。</p>
+          <div class="meta">类别：建筑类 · 有时段限制</div>
+        </article>
+        <article class="card ov-card">
+          <h3>地下管廊检修段</h3>
+          <p>从B1仓库西墙的除锈门进入，管廊纵深约80米，中段有一处混凝土封堵。志愿者在10月21日测得湿度92%，不建议单人行进。</p>
+          <div class="meta">类别：地下类 · 环境负担大</div>
+        </article>
+      </div>
+      <div class="fact-box" style="margin-top:16px">
+        <h4>三类结构对照</h4>
+        <table>
+          <tr><th>通行难度</th><td>铁百叶最易（需工具），疏散梯次之，管廊最难</td></tr>
+          <tr><th>被保安劝离概率</th><td>管廊最高，10月内记录到4次；铁百叶2次</td></tr>
+          <tr><th>是否适合初次到访</th><td>仅疏散梯相对稳妥，其余须结伴</td></tr>
+        </table>
+      </div>
+    </section>
+
+    <!-- 精选内容推荐 -->
+    <section class="section" id="featured" aria-labelledby="ft-title">
+      <div class="sec-head">
+        <div class="sec-eyebrow">精选线索</div>
+        <h2 id="ft-title">三条被走通次数最多的组合路线</h2>
+        <p>每条路线都标了首次记录的日期和复现人，便于判断可信度。</p>
+      </div>
+      <div class="feature-grid">
+        <article class="card feature-main">
+          <img src="https://picsum.photos/seed/yanjiusuo-route/720/420" width="720" height="420" loading="lazy" alt="红砖楼东侧外墙铁艺百叶与脚手架近景" style="object-fit:cover">
+          <div class="fm-body">
+            <h3>东墙百叶→通风井→B1仓库（全程约14分钟）</h3>
+            <p>10月18日由“老叶”首次记录，11月2日“阿棠”带三人复现成功。关键节点是通风井内第二道横梁，位置在距井口约2.6米处，踏错会触发井壁上方的响铃。</p>
+            <p class="meta">首次记录 2025-10-18 · 复现 3 次 · 平均耗时 14 分钟</p>
+            <div>
+              <a class="tag" href="/#guide">通风井横梁位置</a>
+              <a class="tag" href="/#deep">响铃触发争议</a>
+            </div>
+          </div>
+        </article>
+        <div class="feature-side">
+          <article class="card mini">
+            <h3>北疏散梯→B1→除锈门西行</h3>
+            <p>最稳的一条，但只到除锈门为止。10月27日“小满”在18:40被值班员请出，理由是“非授权时段进入地下层”。</p>
+          </article>
+          <article class="card mini">
+            <h3>主梯内侧配电间→管廊入口</h3>
+            <p>需配电间门未上锁，10月内只成功2次。11月1日起该门上贴了“设备检修”告示，实测已上锁。</p>
+          </article>
+          <article class="card mini">
+            <h3>西侧旧收发室→矮窗</h3>
+            <p>窗宽约52厘米，体型受限大。只有1条记录，且未通过复核，暂列为待验证路线。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 最新更新 -->
+    <section class="section" id="updates" aria-labelledby="up-title">
+      <div class="sec-head">
+        <div class="sec-eyebrow">最新更新</div>
+        <h2 id="up-title">本周实地记录与修正</h2>
+        <p>只收录能对上日期和现场物证的变化，传闻类不进列表。</p>
+      </div>
+      <ol class="timeline">
+        <li>
+          <time datetime="2025-11-06">11月6日</time>
+          <h3>东配楼通风井第三次复核</h3>
+          <p>井口铁篦子更换为带锁扣的新件，原先“直接掀起”的做法失效。复核人“老叶”记录：锁扣型号 YK-220，需十字螺丝刀先卸固定片。</p>
+        </li>
+        <li>
+          <time datetime="2025-11-04">11月4日</time>
+          <h3>B1仓库照明恢复</h3>
+          <p>10月下旬熄灭的两排灯管在11月3日检修后恢复。此前靠手机照明行进的建议不再必要，但西段第三根灯管仍缺。</p>
+        </li>
+        <li>
+          <time datetime="2025-11-01">11月1日</time>
+          <h3>配电间门禁告示上墙</h3>
+          <p>主梯内侧配电间门上贴出手写告示“设备检修 暂停进入”，落款为后勤组，日期10月31日。实测门把已锁。</p>
+        </li>
+        <li>
+          <time datetime="2025-10-29">10月29日</time>
+          <h3>管廊湿度回落至88%</h3>
+          <p>10月21日的92%被更新，原因是排水泵恢复运行。志愿者“灰灰”在10月29日7:10测得88%，仍高于安全建议值。</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- 分类入口 -->
+    <section class="section" id="categories" aria-labelledby="cat-title">
+      <div class="sec-head">
+        <div class="sec-eyebrow">分类索引</div>
+        <h2 id="cat-title">按你手上的条件挑入口</h2>
+        <p>有工具、无工具、单人、结伴，能走的通道完全不同。</p>
+      </div>
+      <div class="card index-panel">
+        <h3>按携带工具</h3>
+        <ul class="chip-row">
+          <li><a class="tag" href="/#overview">内六角扳手·铁百叶</a></li>
+          <li><a class="tag" href="/#overview">十字螺丝刀·通风井锁扣</a></li>
+          <li><a class="tag" href="/#guide">无工具·疏散楼梯</a></li>
+          <li><a class="tag" href="/#guide">头灯·地下管廊</a></li>
+        </ul>
+        <h3>按同行人数</h3>
+        <ul class="chip-row">
+          <li><a class="tag" href="/#comments">单人可走</a></li>
+          <li><a class="tag" href="/#comments">两人结伴</a></li>
+          <li><a class="tag" href="/#faq">四人以上不建议</a></li>
+        </ul>
+        <h3>按时段</h3>
+        <ul class="chip-row">
+          <li><a class="tag" href="/#updates">工作日白天</a></li>
+          <li><a class="tag" href="/#faq">傍晚16:30后</a></li>
+          <li><a class="tag" href="/#deep">周末封闭段</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 深度解析 -->
+    <section class="section" id="deep" aria-labelledby="deep-title">
+      <div class="sec-head">
+        <div class="sec-eyebrow">深度解析</div>
+        <h2 id="deep-title">响铃是哪一步触发的：三次记录的差异</h2>
+        <p>同一段通风井，三个人的描述互相矛盾。把物证拆开看，其实能对上。</p>
+      </div>
+      <article class="card article-body">
+        <h2>判断：响铃由横梁受压触发，与脚步轻重无关</h2>
+        <p>围绕东配楼通风井，最常被讨论的问题是“哪一步会响”。10月18日的初版记录写“踩到第二根横梁即响”，10月25日“阿棠”复现时写“第三根才响”，11月2日的第三次复核则记录“完全没响”。三个说法如果只看结论，会以为机关不稳定。</p>
+        <p>把三次记录的时间和动作序列放在一起，差异就有了解释。11月2日复核人带着十字螺丝刀先卸了井口锁扣固定片，井体受力状态与10月两次徒手攀附不同。换句话说，响铃判断依赖的是横梁承载，而非人的脚步位置。</p>
+
+        <h3>三份记录的原始措辞对照</h3>
+        <blockquote>10月18日，老叶：“脚落在第二根横梁中间，头顶上方约半米处铃响，持续约4秒。”<br>
+        10月25日，阿棠：“第二根没响，第三根一压就响，声音更短。”<br>
+        11月2日，阿棠·复核：“先卸固定片后下井，横梁全程无声，井下也未听到铃。”</blockquote>
+        <div class="fact-box">
+          <h4>可核对结构：同一机关的三次记录</h4>
+          <table>
+            <tr><th>记录日期</th><td>10月18日 / 10月25日 / 11月2日</td></tr>
+            <tr><th>动作差异</th><td>徒手攀附 / 徒手攀附 / 先卸锁扣固定片</td></tr>
+            <tr><th>响铃位置</th><td>第二根横梁 / 第三根横梁 / 无声</td></tr>
+            <tr><th>可反驳点</th><td>若横梁受压说成立，卸片后承重改变应导致无声，与观察一致</td></tr>
+          </table>
+        </div>
+
+        <h3>说法差异背后：横梁固定方式变过</h3>
+        <p>11月6日的维修记录 XJ-1106 写明“通风井第二、三横梁加装减震垫片”，日期恰好落在10月25日与11月2日之间。这条记录解释了第三次复核为何无声，也说明10月25日“第三根才响”并非记错，而是垫片尚未装上的窗口期。</p>
+        <p>由此可以下一个可被反驳的判断：今后在锁扣未卸的状态下，响铃大概率仍会出现，位置固定在第二横梁。若有人实测在完全不同的位置响铃，且拍摄到横梁减震垫片已缺失，这个判断才需要修正。</p>
+
+        <h3>规则前后变化：不该被忽略的时间点</h3>
+        <p>10月30日前，东配楼一层外墙的铁百叶被视为“最安静”的进入方式。11月1日更换防拆叶片之后，拆装所需时间从约40秒延长到3分钟以上，且复位时螺丝孔位对不齐会被值班员一眼看出。这一变化直接抬高了整条路线的暴露风险，也改变了原先“白天最稳”的结论。</p>
+        <p>事实层面：叶片已换、锁扣已换、配电间已锁。回应层面：后勤组尚未公开说明更换原因，只在11月3日口头回应“按年度维护计划执行”。转述层面：有到访者称更换与10月多次劝离有关，这属于转述，未获证实。推测层面：若第4季度继续按维护计划执行，其余通风口可能陆续更换，届时路线需要整体重排。</p>
+      </article>
+    </section>
+
+    <!-- 体验指南 -->
+    <section class="section" id="guide" aria-labelledby="gd-title">
+      <div class="sec-head">
+        <div class="sec-eyebrow">体验指南</div>
+        <h2 id="gd-title">从到达到离开的六步，按现场条件取舍</h2>
+        <p>步骤只写可执行动作，不含判断结论。</p>
+      </div>
+      <ol class="steps">
+        <li><b>先在主楼北侧确认疏散门状态</b>工作日9:00—17:00常开；门框右侧有磁力锁指示灯，绿灯亮代表未锁。10月27日18:40那次被请出，就是红灯状态下推门。</li>
+        <li><b>带一件能应付两种螺丝的工具</b>铁百叶用内六角，通风井锁扣用十字螺丝刀。只带一件会让第二段完全走不通。工具不必花钱买，借自五金店即可。</li>
+        <li><b>B1仓库内沿西墙数到第三根立柱</b>除锈门在立柱背后，门高1.9米。11月3日照明恢复后，立柱编号看得清，此前要靠手机灯。</li>
+        <li><b>管廊中段遇混凝土封堵就原地返回</b>封堵位置在纵深约80米处，无旁路。10月21日有两人尝试绕行，花掉50分钟仍回到封堵点。</li>
+        <li><b>出井前把锁扣固定片装回去</b>顺手复位被记入10月复核的“文明到访”条目。11月2日之后，未复位的井口在内侧会被值班员从监控里注意到。</li>
+        <li><b>离开主楼后不要在东墙停留拍照</b>东墙外侧正对后勤组办公室窗户。10月内两次劝离均发生在拍照停留超过2分钟时。</li>
+      </ol>
+      <div class="fact-box" style="margin-top:16px">
+        <h4>现场安全与合规提示</h4>
+        <table>
+          <tr><th>建筑性质</th><td>在用建筑，部分区域限制进入</td></tr>
+          <tr><th>建议做法</th><td>优先选择公开开放区域与疏散楼梯，管廊段不单独进入</td></tr>
+          <tr><th>劝离记录</th><td>10月共记录6次，其中管廊4次、铁百叶2次</td></tr>
+        </table>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="sec-head">
+        <div class="sec-eyebrow">常见问题</div>
+        <h2 id="faq-title">被问得最多的六个具体问题</h2>
+        <p>答案只针对问到的那一件设施。</p>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>通风井的锁扣现在还能徒手掀开吗？</summary>
+          <div class="ans"><p>不能。11月6日井口换成 YK-220 锁扣，固定片由十字螺丝锁在篦子边框上，徒手掀不动。需要先把两颗螺丝卸下，装回时孔位要对准，否则篦子会高出一截。</p></div>
+        </details>
+        <details>
+          <summary>东配楼铁百叶的叶片间距是多少，拆装要多久？</summary>
+          <div class="ans"><p>叶片间距约11厘米，成年人侧身可过。11月1日换装防拆型后，用内六角拆装全套动作从约40秒延长到3分钟以上，主要耗时在复位时对孔。</p></div>
+        </details>
+        <details>
+          <summary>配电间那道门还能进吗？</summary>
+          <div class="ans"><p>10月31日起贴出“设备检修 暂停进入”告示，门把已锁。11月1日至6日的复核均未打开。此前10月内只有2次成功记录，均发生在告示上墙前。</p></div>
+        </details>
+        <details>
+          <summary>管廊湿度88%是什么程度，要不要放弃？</summary>
+          <div class="ans"><p>10月21日92%、10月29日88%，都高于多数到访者给出的“可接受”阈值。湿度之外还有西段第三根灯管缺失，行进时只能看到半径约3米的范围，单人进入的返程判断会变慢。</p></div>
+        </details>
+        <details>
+          <summary>傍晚16:30之后从北疏散梯进去会被发现吗？</summary>
+          <div class="ans"><p>10月27日18:40的记录显示，门框右侧磁力锁指示灯变红后推门，值班员在约2分钟内到达。16:30—17:00之间门仍为常开，但换班前巡视密度上升，被记录的概率高于白天。</p></div>
+        </details>
+        <details>
+          <summary>周末去是不是完全封闭？</summary>
+          <div class="ans"><p>主楼与东配楼在周末保持封闭状态，B1层疏散梯门同样上锁。10月内没有周末成功记录。个别说法称西侧旧收发室矮窗在周末可开，但只有1条口述，未通过复核。</p></div>
+        </details>
+      </div>
+    </section>
+
+    <!-- 用户评论 -->
+    <section class="section" id="comments" aria-labelledby="cm-title">
+      <div class="sec-head">
+        <div class="sec-eyebrow">游客口述</div>
+        <h2 id="cm-title">17份记录里的六段原话</h2>
+        <p>保留说话人的语气差异，包括不认同的部分。</p>
+      </div>
+      <div class="comments">
+        <article class="card comment">
+          <header><span class="avatar">叶</span><div><div class="who">老叶</div><div class="when">10月18日 · 首次记录</div></div></header>
+          <p>第二根横梁中间踩下去就响，声音从头顶偏左传来，不算刺耳。我当时没带螺丝刀，井口是直接掀的。现在回想，那个篦子本来就没锁好。</p>
+          <div class="ref">涉及：通风井第二横梁</div>
+        </article>
+        <article class="card comment">
+          <header><span class="avatar">棠</span><div><div class="who">阿棠</div><div class="when">10月25日 · 复现</div></div></header>
+          <p>第三根才响，和第二根没关系。我不太同意老叶的说法，但也没法证明他是错的。反正那天从井里出来，手上全是铁锈。</p>
+          <div class="ref">涉及：第三横梁响铃差异</div>
+        </article>
+        <article class="card comment">
+          <header><span class="avatar">满</span><div><div class="who">小满</div><div class="when">10月27日 · 被劝离</div></div></header>
+          <p>18:40推的门，红色指示灯。进来大概两分钟，值班员就站在楼梯下面了，态度不算差，只是让我原路出去。下次不会再挑换班时间。</p>
+          <div class="ref">涉及：北疏散梯磁力锁</div>
+        </article>
+        <article class="card comment">
+          <header><span class="avatar">灰</span><div><div class="who">灰灰</div><div class="when">10月29日 · 湿度测量</div></div></header>
+          <p>88%，比一周前的92%好一点，但还是闷。西段第三根灯管没亮，靠头灯也只照到前面三米。我不会再一个人走那段。</p>
+          <div class="ref">涉及：地下管廊西段照明</div>
+        </article>
+        <article class="card comment">
+          <header><span class="avatar">七</span><div><div class="who">七号观察者</div><div class="when">11月2日 · 复核</div></div></header>
+          <p>卸了锁扣固定片才下井，结果一路没响。老叶听到的铃也许不是横梁触发的，可能是井壁上方那个旧报警盒，位置高，声音传下来会显得靠左。这只是猜测。</p>
+          <div class="ref">涉及：响铃触发部位存疑</div>
+        </article>
+        <article class="card comment">
+          <header><span class="avatar">路</span><div><div class="who">路过的人</div><div class="when">11月5日 · 旁观</div></div></header>
+          <p>没进去，只在东墙外站了一会。防拆叶片看起来和以前一样，但螺丝头是新换的，反光明显。值班室窗户正对着这一面，拍照的人确实容易被看到。</p>
+          <div class="ref">涉及：东墙防拆叶片与监控视线</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 相关资讯 -->
+    <section class="section" id="news" aria-labelledby="news-title">
+      <div class="sec-head">
+        <div class="sec-eyebrow">相关资讯</div>
+        <h2 id="news-title">与通行条件直接相关的四件事</h2>
+        <p>只看能改变路线选择的信息。</p>
+      </div>
+      <ul class="news-grid">
+        <li class="card">
+          <h3>B1仓库照明 11月3日恢复</h3>
+          <p class="meta">11月3日 · 检修组</p>
+          <p>西墙段两排灯管更换完成，立柱编号重新可见。西段第三根灯管仍在缺件清单上。</p>
+        </li>
+        <li class="card">
+          <h3>通风井篦子锁扣换型</h3>
+          <p class="meta">11月6日 · 后勤组</p>
+          <p>型号 YK-220，固定片两颗十字螺丝。旧篦子未锁状态结束，直接掀开的做法失效。</p>
+        </li>
+        <li class="card">
+          <h3>管廊排水泵恢复运行</h3>
+          <p class="meta">10月29日 · 志愿测量</p>
+          <p>湿度从92%降到88%。排水泵位置在中段封堵前约12米处，能听到持续运转声。</p>
+        </li>
+        <li class="card">
+          <h3>配电间告示上墙</h3>
+          <p class="meta">10月31日 · 后勤组</p>
+          <p>手写告示写明“设备检修 暂停进入”，日期10月31日。此后6天内未见开门记录。</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 相关推荐 -->
+    <section class="section" id="reco" aria-labelledby="reco-title">
+      <div class="sec-head">
+        <div class="sec-eyebrow">相关推荐</div>
+        <h2 id="reco-title">还想继续看的具体条目</h2>
+        <p>按你刚看完的内容延伸。</p>
+      </div>
+      <div class="reco-wrap">
+        <div class="card reco-main">
+          <h3>可延伸的五个方向</h3>
+          <ul class="reco-list">
+            <li><span class="n">01</span><a href="/#deep">通风井横梁减震垫片安装前后对照</a></li>
+            <li><span class="n">02</span><a href="/#guide">铁百叶内六角规格与拆装耗时实测</a></li>
+            <li><span class="n">03</span><a href="/#updates">10月劝离6次的发生位置与时段</a></li>
+            <li><span class="n">04</span><a href="/#faq">北疏散梯磁力锁指示灯与换班时间</a></li>
+            <li><span class="n">05</span><a href="/#overview">西侧旧收发室矮窗的唯一记录</a></li>
+          </ul>
+        </div>
+        <div class="card reco-tags">
+          <h3>相关推荐标签</h3>
+          <ul class="chip-row">
+            <li><a class="tag" href="/#deep">第二横梁响铃</a></li>
+            <li><a class="tag" href="/#guide">YK-220锁扣</a></li>
+            <li><a class="tag" href="/#guide">防拆叶片</a></li>
+            <li><a class="tag" href="/#faq">磁力锁红灯</a></li>
+            <li><a class="tag" href="/#updates">管廊88%湿度</a></li>
+            <li><a class="tag" href="/#comments">除锈门立柱</a></li>
+            <li><a class="tag" href="/#deep">减震垫片</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 榜单 -->
+    <section class="section" id="rank" aria-labelledby="rank-title">
+      <div class="sec-head">
+        <div class="sec-eyebrow">可信度分层</div>
+        <h2 id="rank-title">五条说法的证据等级排序</h2>
+        <p>按可核对痕迹的数量排序，不按传播热度。</p>
+      </div>
+      <ol class="card rank" style="padding:0;overflow:hidden">
+        <li><b>横梁加装减震垫片</b><span>维修记录 XJ-1106 · 强</span></li>
+        <li><b>通风井锁扣已换型</b><span>11月6日现场复核 · 强</span></li>
+        <li><b>管廊湿度88%</b><span>10月29日志愿测量 · 中</span></li>
+        <li><b>第三横梁才响铃</b><span>单人记录，与垫片时间冲突 · 弱</span></li>
+        <li><b>西侧矮窗周末可开</b><span>1条口述，未复核 · 存疑</span></li>
+      </ol>
+    </section>
+
+    <!-- 补充板块 -->
+    <section class="section" id="notes" aria-labelledby="note-title">
+      <div class="sec-head">
+        <div class="sec-eyebrow">补充说明</div>
+        <h2 id="note-title">读这些记录时要留意的三件事</h2>
+      </div>
+      <div class="notes">
+        <article class="card note-card">
+          <h3>日期比结论更可靠</h3>
+          <p>同一人在10月25日和11月2日的说法不一致，原因是11月1日叶片更换、11月6日锁扣换型。先对日期，再看结论。</p>
+        </article>
+        <article class="card note-card">
+          <h3>声音描述容易失真</h3>
+          <p>井内混响长，铃响位置听感会偏向高处。老叶记录的“头顶偏左”就与阿棠“更短”的描述不同，两者未必矛盾。</p>
+        </article>
+        <article class="card note-card">
+          <h3>只单次出现的记录单列</h3>
+          <p>西侧矮窗、主梯配电间各只有1—2次记录，且时间点均在10月内。它们不能作为稳定路线推荐给任何人。</p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 侧栏 -->
+  <aside class="side" aria-label="侧栏导航与速查">
+    <div class="side-rail">
+      <div class="side-card side-nav" aria-label="本页快速跳转">
+        <h2>本页路线</h2>
+        <ul>
+          <li><a href="/#overview">入口概览</a></li>
+          <li><a href="/#featured">精选线索</a></li>
+          <li><a href="/#updates">最新更新</a></li>
+          <li><a href="/#categories">分类索引</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#comments">游客口述</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#reco">相关推荐</a></li>
+          <li><a href="/#rank">可信度分层</a></li>
+        </ul>
+      </div>
+      <div class="side-card">
+        <h3>速查：三个关键数字</h3>
+        <ul class="reco-list">
+          <li><span class="n">11</span>铁百叶叶片间距约11厘米</li>
+          <li><span class="n">2.6</span>通风井第二横梁距井口约2.6米</li>
+          <li><span class="n">88</span>管廊湿度10月29日测得88%</li>
+        </ul>
+      </div>
+      <div class="side-card">
+        <h3>近期劝离位置</h3>
+        <p class="meta" style="margin:0">10月共6次：地下管廊4次、东墙铁百叶2次。北疏散梯记录1次于10月27日18:40。</p>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<!-- 页尾 -->
+<footer class="site-foot" id="foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <div class="fl">
+          <svg width="30" height="30" viewBox="0 0 40 40" aria-hidden="true">
+            <rect x="1.5" y="1.5" width="37" height="37" rx="9" fill="#f0c675"/>
+            <path d="M11 29V11h6.2l2.8 5.4 2.8-5.4H29v18h-4.6V18.6L20 27.4l-4.4-8.8V29z" fill="#1b2a3f"/>
+          </svg>
+          <span>研究所秘密入口入口</span>
+        </div>
+        <p>以现场维修记录、门禁时段与到访者口述交叉核对，标出哪些路线可复现、哪些只是单次传闻。</p>
+        <p class="meta" style="color:#8c9aad">页脚更新时间：2025-11-08 08:35 · 对应正文 11月6日通风井复核、11月3日照明恢复与11月1日配电间告示。</p>
+      </div>
+      <div class="foot-cols">
+        <div>
+          <h3>入口结构</h3>
+          <ul>
+            <li><a href="/#overview">铁百叶与检修口</a></li>
+            <li><a href="/#overview">消防疏散楼梯通道</a></li>
+            <li><a href="/#overview">地下管廊检修段</a></li>
+            <li><a href="/#categories">按工具分类</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>现场记录</h3>
+          <ul>
+            <li><a href="/#updates">本周更新</a></li>
+            <li><a href="/#news">相关资讯</a></li>
+            <li><a href="/#rank">可信度分层</a></li>
+            <li><a href="/#comments">游客口述</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>动手前</h3>
+          <ul>
+            <li><a href="/#guide">六步体验指南</a></li>
+            <li><a href="/#faq">常见问题</a></li>
+            <li><a href="/#deep">通风井响铃解析</a></li>
+            <li><a href="/#reco">相关推荐</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>示例数据说明：路线时限、机关型号、劝离次数与湿度读数均为垂类示例条目，以现场最新记录为准。</span>
+      <span class="sep">·</span>
+      <span>口述内容经受访者同意后整理，语气保留原状。</span>
+      <span class="sep">·</span>
+      <span>© 2025 研究所秘密入口入口 内容记录</span>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" type="button" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  "use strict";
+  var menuBtn=document.getElementById('menuBtn');
+  var siteNav=document.getElementById('siteNav');
+  var cols=siteNav?siteNav.querySelectorAll('a'):[];
+  var toTop=document.getElementById('toTop');
+  var searchInput=document.getElementById('searchInput');
+  var searchBtn=document.getElementById('searchBtn');
+  var searchFeedback=document.getElementById('searchFeedback');
+  var navLinks=document.querySelectorAll('.side-nav a');
+
+  /* 移动端菜单 */
+  if(menuBtn&&siteNav){
+    menuBtn.addEventListener('click',function(){
+      var open=siteNav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded',open?'true':'false');
+      menuBtn.textContent=open?'收起':'菜单';
+    });
+    siteNav.addEventListener('click',function(e){
+      if(e.target.tagName==='A'&&window.innerWidth<=760){
+        siteNav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+        menuBtn.textContent='菜单';
+      }
+    });
+    document.addEventListener('keydown',function(e){
+      if(e.key==='Escape'&&siteNav.classList.contains('open')){
+        siteNav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+        menuBtn.textContent='菜单';
+        menuBtn.focus();
+      }
+    });
+  }
+
+  /* 本地查找 */
+  function doSearch(){
+    if(!searchInput||!searchFeedback) return;
+    var q=searchInput.value.trim();
+    searchFeedback.classList.remove('show');
+    if(!q){return;}
+    var sections=document.querySelectorAll('main .section');
+    var hits=[];
+    sections.forEach(function(sec){
+      var title=sec.querySelector('h2');
+      var id=sec.id;
+      if(!title||!id) return;
+      if(title.textContent.indexOf(q)>-1||sec.textContent.indexOf(q)>-1){
+        hits.push({id:id,title:title.textContent.trim()});
+      }
+    });
+    if(hits.length===0){
+      searchFeedback.textContent='没有找到与“'+q+'”相关的内容。可试试：通风井、磁力锁、内六角、管廊湿度。';
+      searchFeedback.classList.add('show');
+      return;
+    }
+    var first=hits[0];
+    var target=document.getElementById(first.id);
+    if(target){target.scrollIntoView({behavior:'smooth',block:'start'});}
+    searchFeedback.textContent='找到 '+hits.length+' 处，已跳到“'+first.title+'”。';
+    searchFeedback.classList.add('show');
+  }
+  if(searchBtn){searchBtn.addEventListener('click',doSearch);}
+  if(searchInput){
+    searchInput.addEventListener('keydown',function(e){
+      if(e.key==='Enter'){e.preventDefault();doSearch();}
+    });
+  }
+
+  /* 侧栏高亮 */
+  var sectionIds=[];
+  navLinks.forEach(function(a){
+    var href=a.getAttribute('href')||'';
+    var m=href.indexOf('#');
+    if(m>-1){sectionIds.push(href.slice(m+1));}
+  });
+  function highlight(){
+    var y=window.scrollY+140;
+    var current='';
+    sectionIds.forEach(function(id){
+      var el=document.getElementById(id);
+      if(el&&el.offsetTop<=y){current=id;}
+    });
+    navLinks.forEach(function(a){
+      var href=a.getAttribute('href')||'';
+      a.classList.toggle('active',href.slice(href.indexOf('#'))==='#'+current);
+    });
+  }
+  window.addEventListener('scroll',highlight,{passive:true});
+  highlight();
+
+  /* 回到顶部 */
+  function toggleTop(){
+    if(!toTop) return;
+    if(window.scrollY>420){toTop.classList.add('show');}
+    else{toTop.classList.remove('show');}
+  }
+  window.addEventListener('scroll',toggleTop,{passive:true});
+  toggleTop();
+  if(toTop){
+    toTop.addEventListener('click',function(){
+      window.scrollTo({top:0,behavior:'smooth'});
+    });
+  }
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"研究所秘密入口入口",
+  "description":"研究所秘密入口入口的隐藏线索、解谜顺序与实地体验指南，整理7处机关触发条件、3条公认路线、常见翻车点与游客口述记录。",
+  "inLanguage":"zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"通风井的锁扣现在还能徒手掀开吗？","acceptedAnswer":{"@type":"Answer","text":"不能。11月6日井口换成 YK-220 锁扣，固定片由十字螺丝锁在篦子边框上，徒手掀不动。需要先把两颗螺丝卸下，装回时孔位要对准，否则篦子会高出一截。"}},
+    {"@type":"Question","name":"东配楼铁百叶的叶片间距是多少，拆装要多久？","acceptedAnswer":{"@type":"Answer","text":"叶片间距约11厘米，成年人侧身可过。11月1日换装防拆型后，用内六角拆装全套动作从约40秒延长到3分钟以上，主要耗时在复位时对孔。"}},
+    {"@type":"Question","name":"配电间那道门还能进吗？","acceptedAnswer":{"@type":"Answer","text":"10月31日起贴出“设备检修 暂停进入”告示，门把已锁。11月1日至6日的复核均未打开。此前10月内只有2次成功记录，均发生在告示上墙前。"}},
+    {"@type":"Question","name":"管廊湿度88%是什么程度，要不要放弃？","acceptedAnswer":{"@type":"Answer","text":"10月21日92%、10月29日88%，都高于多数到访者给出的可接受阈值。湿度之外还有西段第三根灯管缺失，行进时只能看到半径约3米的范围，单人进入的返程判断会变慢。"}},
+    {"@type":"Question","name":"傍晚16:30之后从北疏散梯进去会被发现吗？","acceptedAnswer":{"@type":"Answer","text":"10月27日18:40的记录显示，门框右侧磁力锁指示灯变红后推门，值班员在约2分钟内到达。16:30—17:00之间门仍为常开，但换班前巡视密度上升，被记录的概率高于白天。"}},
+    {"@type":"Question","name":"周末去是不是完全封闭？","acceptedAnswer":{"@type":"Answer","text":"主楼与东配楼在周末保持封闭状态，B1层疏散梯门同样上锁。10月内没有周末成功记录。个别说法称西侧旧收发室矮窗在周末可开，但只有1条口述，未通过复核。"}}
+  ]
+}
+</script>
+</body>
+  </html>
